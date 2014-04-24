@@ -19,8 +19,9 @@ namespace Exercicios
             double[] percDesconto = new double[4];
             double[] precoDesconto = new double[4];
             double totalPagar = 0;
-            Console.Write("     LOJAS XYZ");
-
+            Console.WriteLine("     LOJAS XYZ");
+            Console.WriteLine(" ");
+            
             for (int i = 0; i < 4; i++)
             {
                 Console.Write("Informe o nome do artigo: ");
