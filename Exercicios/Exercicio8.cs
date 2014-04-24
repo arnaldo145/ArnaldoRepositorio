@@ -25,6 +25,9 @@ namespace Exercicios
             double[] percentual = new double[3];
             double totalVendas = 0;
 
+            Console.WriteLine("     EMPRESA DE VENDAS");
+            Console.WriteLine(" ");
+
             for (int i = 0; i < 3; i++)
             {
                 Console.Write("Informe o nome do corretor: ");
