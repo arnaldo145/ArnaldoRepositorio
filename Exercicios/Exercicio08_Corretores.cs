@@ -8,7 +8,7 @@ namespace Exercicios
 {
     class Exercicio_8
     {
-        static void Main(string[] args)
+        static void Main8(string[] args)
         {
             //Uma empresa de vendas tem três corretores. A empresa paga ao corretor uma 
             //comissão calculada de acordo com o valor de suas vendas. Se o valor da venda 
