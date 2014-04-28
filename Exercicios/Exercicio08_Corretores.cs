@@ -8,7 +8,7 @@ namespace Exercicios
 {
     class Exercicio_8
     {
-        static void Main8(string[] args)
+        static void Main(string[] args)
         {
             //Uma empresa de vendas tem três corretores. A empresa paga ao corretor uma 
             //comissão calculada de acordo com o valor de suas vendas. Se o valor da venda 
@@ -59,9 +59,9 @@ namespace Exercicios
             for (int i = 0; i < 3; i++)
             {
                 Console.WriteLine("Corretor: " + nomeCorretor[i]);
-                Console.WriteLine("Valor da venda: " + valorVenda[i]);
-                Console.WriteLine("Percentual da comissão: " + percentual[i]);
-                Console.WriteLine("Comissão do corretor: " + comissaoCorretor[i]);
+                Console.WriteLine("Valor da venda: R$" + valorVenda[i]);
+                Console.WriteLine("Percentual da comissão: " + percentual[i] + " %");
+                Console.WriteLine("Comissão do corretor: R$" + comissaoCorretor[i]);
                 totalVendas += valorVenda[i];
                 Console.WriteLine(" ");
             }
