@@ -55,6 +55,7 @@ namespace Exercicios
             }
 
             Console.WriteLine("      RELATÓRIO");
+            Console.WriteLine(" ");
 
             for (int i = 0; i < 3; i++)
             {
@@ -66,7 +67,7 @@ namespace Exercicios
                 Console.WriteLine(" ");
             }
 
-            Console.WriteLine("Total de vendas: " + totalVendas);
+            Console.WriteLine("Total de vendas: R$" + totalVendas);
             Console.ReadKey();
         }
     }
