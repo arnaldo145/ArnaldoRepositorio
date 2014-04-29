@@ -34,7 +34,8 @@ namespace ExerciciosComplementares_UnidadeVI
                 caixas[i] = int.Parse(Console.ReadLine());
             }
 
-            Console.WriteLine(" ===== FOLHA DE PAGAMENTO =====");
+            Console.WriteLine("\n ===== FOLHA DE PAGAMENTO =====");
+
             for (int i = 0; i < qtdTrabalhadores; i++)
             {
                 double salarioTrabalhador = 0;
@@ -61,15 +62,15 @@ namespace ExerciciosComplementares_UnidadeVI
 
                 if (idade[i] >= 18 && idade[i] < 45)
                 {
-                    salarioTrabalhador += salarioTrabalhador * (0.1);
+                    salarioTrabalhador += (salarioTrabalhador * 0.1);
                 }
 
                 if (idade[i] >= 45 && idade[i] < 65)
                 {
-                    salarioTrabalhador += salarioTrabalhador * (0.2);
+                    salarioTrabalhador += (salarioTrabalhador * 0.2);
                 }
               
-                Console.WriteLine("Código do Trabalhador: {0} \nIdade do Trabalhador: {1} \nCaixas colhidas pelo trabalhador: {2} \nSalário do trabalhador: R$ {3}\n", codigo[i], idade[i], caixas[i], salarioTrabalhador);
+                Console.WriteLine("\nCódigo do Trabalhador: {0} \nIdade do Trabalhador: {1} \nCaixas colhidas pelo trabalhador: {2} \nSalário do trabalhador: R$ {3}\n", codigo[i], idade[i], caixas[i], salarioTrabalhador);
             }
 
             Console.ReadKey();
