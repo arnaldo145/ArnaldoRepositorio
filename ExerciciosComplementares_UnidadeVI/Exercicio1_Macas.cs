@@ -12,7 +12,7 @@ namespace ExerciciosComplementares_UnidadeVI
         //compradas pelo menos doze. Escreva um programa que leia o número de maçãs compradas, calcule e
         //escreva o valor total da compra.
 
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Console.Write("Informe a quantidade de macas que foram compradas: ");
             int qtdMacas = int.Parse(Console.ReadLine());
@@ -20,14 +20,16 @@ namespace ExerciciosComplementares_UnidadeVI
 
             if (qtdMacas < 12)
             {
+                Console.WriteLine("\nMaçãs: R${0:F2}", 0.30);
                 totalPagar = qtdMacas * 0.30;
             }
             else
             {
+                Console.WriteLine("\nMaçãs: R${0:F2}", 0.25);
                 totalPagar = qtdMacas * 0.25;
             }
 
-            Console.WriteLine("Valor total da compra: {0}", totalPagar);
+            Console.WriteLine("Valor total da compra: R${0:F2}", totalPagar);
             Console.ReadKey();
         }
     }
