@@ -13,7 +13,7 @@ namespace ExerciciosComplementares_UnidadeVI
         //trabalhadores no final do dia conforme a quantidade de caixas colhidas segundo a tabela abaixo:
         //Além disso, o fazendeiro pagará um adicional conforme a idade do trabalhador segundo a tabela abaixo:
 
-        static void Main(string[] args)
+        static void Main5(string[] args)
         {
             Console.Write("Informe a quantidade de trabalhadores contratados: ");
             int qtdTrabalhadores = int.Parse(Console.ReadLine());
