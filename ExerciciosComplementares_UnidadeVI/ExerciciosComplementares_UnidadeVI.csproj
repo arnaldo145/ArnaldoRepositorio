@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exercicio6_ConcursoBeleza.cs" />
     <Compile Include="Exercicio1_Macas.cs" />
     <Compile Include="Exercicio2_Senha.cs" />
     <Compile Include="Exercicio3_PesoIdeal.cs" />
