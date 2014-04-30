@@ -17,7 +17,7 @@ namespace ExerciciosComplementares_UnidadeVI
         static string Senha = "NomeUsuario123";
         static int ContadorDias;
 
-        static void Main2(string[] args)
+        static void Main(string[] args)
         {
             ContadorDias = 15;
             int opcao = 0;
@@ -70,8 +70,8 @@ namespace ExerciciosComplementares_UnidadeVI
 
         static void mostrarMenu()
         {
-            Console.WriteLine("===== MENU =====");
-            Console.WriteLine("1 - ENTRAR NO SISTEMA \n2 - ALTERAR SENHA \n3 - SAIR");
+            Console.WriteLine("  ===== MENU =====  ");
+            Console.WriteLine("1 - ENTRAR NO SISTEMA \n2 - ALTERAR SENHA \n3 - SAIR\n");
         }
 
         static void entrarSistema()
