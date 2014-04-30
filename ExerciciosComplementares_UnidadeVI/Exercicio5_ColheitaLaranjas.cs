@@ -69,7 +69,7 @@ namespace ExerciciosComplementares_UnidadeVI
                 {
                     salarioTrabalhador += (salarioTrabalhador * 0.2);
                 }
-              
+
                 Console.WriteLine("\nCódigo do Trabalhador: {0} \nIdade do Trabalhador: {1} \nCaixas colhidas pelo trabalhador: {2} \nSalário do trabalhador: R$ {3}\n", codigo[i], idade[i], caixas[i], salarioTrabalhador);
             }
 

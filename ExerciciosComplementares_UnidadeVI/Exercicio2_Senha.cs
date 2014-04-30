@@ -22,8 +22,9 @@ namespace ExerciciosComplementares_UnidadeVI
             ContadorDias = 15;
             int opcao = 0;
 
-            do{
-                Console.Clear();                
+            do
+            {
+                Console.Clear();
 
                 if (ContadorDias == 0)
                 {
@@ -63,7 +64,7 @@ namespace ExerciciosComplementares_UnidadeVI
                 }
 
                 ContadorDias -= 1;
-            } while (opcao != 3);           
+            } while (opcao != 3);
 
             Console.ReadKey();
         }
