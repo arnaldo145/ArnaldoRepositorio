@@ -25,17 +25,17 @@ namespace ExerciciosComplementares_UnidadeVI
 
             if (golsGremio > golsInter)
             {
-                Console.WriteLine("Grêmio venceu esse jogo!");
+                Console.WriteLine("\nGrêmio venceu esse jogo!");
             }
 
             if (golsGremio == golsInter)
             {
-                Console.WriteLine("Empate nesse jogo!");
+                Console.WriteLine("\nEmpate nesse jogo!");
             }
 
             if (golsGremio < golsInter)
             {
-                Console.WriteLine("Inter venceu esse jogo!");
+                Console.WriteLine("\nInter venceu esse jogo!");
             }
 
             Console.ReadKey();

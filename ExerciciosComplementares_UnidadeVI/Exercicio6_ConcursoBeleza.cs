@@ -13,9 +13,10 @@ namespace ExerciciosComplementares_UnidadeVI
         //deverá ser encerrado e imprimir: o nome e a altura da moça mais alta e o número de 
         //moças no concurso. Considere que todas as moças possuem altura diferente.
 
-        static void Main(string[] args)
+        static void Main6(string[] args)
         {
             Console.WriteLine(" ===== CONCURSO DE BELEZA =====");
+
             int contadorCandidatas = 0;
             string candidataMaisAlta = null;
             double alturaMaisAlta = 0;
@@ -29,7 +30,7 @@ namespace ExerciciosComplementares_UnidadeVI
 
                 if (nomeCandidata.ToLower() == "fim")
                 {
-                    Console.WriteLine("\nCandidata mais alta: {0} \n Altura: {1}", candidataMaisAlta, alturaMaisAlta);
+                    Console.WriteLine("\nCandidata mais alta: {0} \nAltura: {1}", candidataMaisAlta, alturaMaisAlta);
                     Console.WriteLine("Número de candidatas: {0}", contadorCandidatas);
                 }
                 else
