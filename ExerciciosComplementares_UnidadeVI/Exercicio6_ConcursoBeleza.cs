@@ -20,19 +20,12 @@ namespace ExerciciosComplementares_UnidadeVI
             string candidataMaisAlta = null;
             double alturaMaisAlta = 0;
             int numeroCandidatas = 1;
+            double altura = 0;
 
             for (int i = 0; i < numeroCandidatas; i++)
             {
                 Console.Write("Informe o nome da candidata: ");
                 string nomeCandidata = Console.ReadLine();
-                Console.Write("Informe a altura da candidata: ");
-                double altura = double.Parse(Console.ReadLine());
-
-                if (altura > alturaMaisAlta)
-                {
-                    alturaMaisAlta = altura;
-                    candidataMaisAlta = nomeCandidata;
-                }
 
                 if (nomeCandidata.ToLower() == "fim")
                 {
@@ -41,6 +34,13 @@ namespace ExerciciosComplementares_UnidadeVI
                 }
                 else
                 {
+                    Console.Write("Informe a altura da candidata: ");
+                    altura = double.Parse(Console.ReadLine());
+                    if (altura > alturaMaisAlta)
+                    {
+                        alturaMaisAlta = altura;
+                        candidataMaisAlta = nomeCandidata;
+                    }
                     numeroCandidatas += 1;
                     contadorCandidatas += 1;
                 }
