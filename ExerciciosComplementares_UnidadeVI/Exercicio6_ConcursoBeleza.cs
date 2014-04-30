@@ -36,11 +36,13 @@ namespace ExerciciosComplementares_UnidadeVI
                 {
                     Console.Write("Informe a altura da candidata: ");
                     altura = double.Parse(Console.ReadLine());
+
                     if (altura > alturaMaisAlta)
                     {
                         alturaMaisAlta = altura;
                         candidataMaisAlta = nomeCandidata;
                     }
+
                     numeroCandidatas += 1;
                     contadorCandidatas += 1;
                 }
