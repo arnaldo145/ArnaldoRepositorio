@@ -55,6 +55,7 @@ namespace ExerciciosComplementares_UnidadeVI
                         break;
 
                     case 3:
+                        Console.Clear();
                         Console.WriteLine("\nATÉ LOGO!");
                         break;
 
