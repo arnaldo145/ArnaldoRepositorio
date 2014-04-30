@@ -34,5 +34,6 @@ namespace ExerciciosComplementares_UnidadeVI
             Console.WriteLine("Valor total da compra: R${0:F2}", totalPagar);
             Console.ReadKey();
         }
+
     }
 }
