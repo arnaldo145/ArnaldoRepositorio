@@ -12,7 +12,7 @@ namespace Exercicios
         //nome, preço e percentual de desconto. Faça um algoritmo que imprima nome, 
         //preço e preço com desconto de cada artigo e o total a pagar.
 
-        static void Main(string[] args)
+        static void Main10(string[] args)
         {
             string[] nomeArtigo = new string[4];
             double[] preco = new double[4];

@@ -41,9 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exercicio10_Loja.cs" />
-    <Compile Include="Exercicio08_Corretores.cs" />
-    <Compile Include="Exercicio09_Comparacao.cs" />
+    <Compile Include="ExerciciosComplementaresII\Exercicio1_Macas.cs" />
+    <Compile Include="ExerciciosComplementaresII\Exercicio2_Senha.cs" />
+    <Compile Include="ExerciciosComplementaresII\Exercicio3_PesoIdeal.cs" />
+    <Compile Include="ExerciciosComplementaresII\Exercicio4_Grenal.cs" />
+    <Compile Include="ExerciciosComplementaresII\Exercicio5_ColheitaLaranjas.cs" />
+    <Compile Include="ExerciciosComplementaresII\Exercicio6_ConcursoBeleza.cs" />
+    <Compile Include="ExerciciosComplementaresII\Exercicio7_SalarioFuncionario.cs" />
+    <Compile Include="ExerciciosComplementaresII\Exercicio8_Nomes.cs" />
+    <Compile Include="ExerciciosComplementaresII\Exercicio9_Letras.cs" />
+    <Compile Include="ExerciciosComplementares\Exercicio10_Loja.cs" />
+    <Compile Include="ExerciciosComplementares\Exercicio08_Corretores.cs" />
+    <Compile Include="ExerciciosComplementares\Exercicio09_Comparacao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
