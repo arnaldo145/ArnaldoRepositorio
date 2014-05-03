@@ -17,7 +17,7 @@ namespace ExerciciosComplementares_UnidadeVI
         static string Senha = "NomeUsuario123";
         static int ContadorDias;
 
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             ContadorDias = 15;
             int opcao = 0;

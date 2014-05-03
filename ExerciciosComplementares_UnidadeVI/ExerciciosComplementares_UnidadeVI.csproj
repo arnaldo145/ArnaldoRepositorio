@@ -47,6 +47,8 @@
     <Compile Include="Exercicio1_Macas.cs" />
     <Compile Include="Exercicio4_Grenal.cs" />
     <Compile Include="Exercicio5_ColheitaLaranjas.cs" />
+    <Compile Include="Exercicio7_SalarioFuncionario.cs" />
+    <Compile Include="Exercicio8_Nomes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
