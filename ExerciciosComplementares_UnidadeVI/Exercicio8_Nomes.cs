@@ -23,7 +23,28 @@ namespace ExerciciosComplementares_UnidadeVI
 
         static void Main(string[] args)
         {
+            Console.Write("Informe o número de nomes: ");
+            int quantidadeNomes = int.Parse(Console.ReadLine());
+            string[] nomes = new string[quantidadeNomes];
 
+            for (int i = 0; i < nomes.Length; i++)
+            {
+                Console.Write("Informe o nome: ");
+                nomes[i] = Console.ReadLine();
+            }
+
+            for (int i = 0; i < nomes.Length; i++)
+            {
+                var nome = nomes[i].Split();
+                Console.Write("\n{0}, ", nome[nome.Length - 1].ToUpper());
+
+                for (int j = 0; j < nome.Length - 1; j++)
+                {
+                    Console.Write("{0} ", nome[j]);
+                }
+            }
+
+            Console.ReadKey();
         }
     }
 }
