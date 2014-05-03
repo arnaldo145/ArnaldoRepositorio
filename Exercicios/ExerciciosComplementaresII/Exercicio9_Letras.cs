@@ -16,7 +16,7 @@ namespace Exercicios.ExerciciosComplementaresII
 
     class Exercicio9_Letras
     {
-        static void Main(string[] args)
+        static void Main9(string[] args)
         {
             Console.WriteLine("     CONTADOR DE BURACOS NO TEXTO");
             Console.Write("\nDigite um texto: ");

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExerciciosComplementaresII\Exercicio10_NumerosAmigos.cs" />
     <Compile Include="ExerciciosComplementaresII\Exercicio1_Macas.cs" />
     <Compile Include="ExerciciosComplementaresII\Exercicio2_Senha.cs" />
     <Compile Include="ExerciciosComplementaresII\Exercicio3_PesoIdeal.cs" />
