@@ -18,7 +18,40 @@ namespace Exercicios.ExerciciosComplementaresII
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("     CONTADOR DE BURACOS NO TEXTO");
+            Console.Write("\nDigite um texto: ");
+            string texto = Console.ReadLine();
+            int contador = contarBuracos(texto.ToUpper());
+            Console.WriteLine("\nExistem {0} buracos no texto a seguir: \n{1}", contador, texto.ToUpper());
+            Console.ReadKey();
         }
+
+        static int contarBuracos(string textoCont)
+        {
+            int count = 0;
+            var letrasTexto = textoCont.ToCharArray();
+            for (int i = 0; i < textoCont.Length; i++)
+            {
+                switch (textoCont[i])
+                {
+                    case 'Q':
+                    case 'R':
+                    case 'O':
+                    case 'P':
+                    case 'A':
+                    case 'D':
+                        count += 1;
+                        break;
+                    case 'B':
+                        count += 2;
+                        break;
+                    default:
+                        count += 0;
+                        break;
+                }
+            }
+                return count;
+        }
+
     }
 }
