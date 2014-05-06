@@ -32,8 +32,7 @@ namespace ExerciciosComplementares_UnidadeVI
                     Console.ReadKey();
                     Console.Clear();
                     Console.WriteLine("\nVocê deve alterar a senha em {0} dias \n", (ContadorDias - 1));
-                }
-                else
+                } else
                 {
                     Console.WriteLine("\nVocê deve alterar a senha em {0} dias \n", ContadorDias);
                 }
