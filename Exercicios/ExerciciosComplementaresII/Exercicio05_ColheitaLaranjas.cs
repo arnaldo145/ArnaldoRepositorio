@@ -35,30 +35,37 @@ namespace ExerciciosComplementares_UnidadeVI
             for (int i = 0; i < qtdTrabalhadores; i++)
             {
                 double salarioTrabalhador = 0;
+
                 if (caixas[i] <= 5)
                 {
                     salarioTrabalhador = caixas[i] * 2;
                 }
+
                 if (caixas[i] >= 6 && caixas[i] <= 10)
                 {
                     salarioTrabalhador = caixas[i] * 2.50;
                 }
+
                 if (caixas[i] >= 11 && caixas[i] <= 20)
                 {
                     salarioTrabalhador = caixas[i] * 3.50;
                 }
+
                 if (caixas[i] >= 21)
                 {
                     salarioTrabalhador = caixas[i] * 5;
                 }
+
                 if (idade[i] >= 18 && idade[i] < 45)
                 {
                     salarioTrabalhador += (salarioTrabalhador * 0.1);
                 }
+
                 if (idade[i] >= 45 && idade[i] < 65)
                 {
                     salarioTrabalhador += (salarioTrabalhador * 0.2);
                 }
+
                 Console.WriteLine("\nCódigo do Trabalhador: {0} \nIdade do Trabalhador: {1} \nCaixas colhidas pelo trabalhador: {2} \nSalário do trabalhador: R$ {3}\n", codigo[i], idade[i], caixas[i], salarioTrabalhador);
             }
             Console.ReadKey();

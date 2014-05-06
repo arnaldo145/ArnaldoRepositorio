@@ -18,7 +18,7 @@ namespace Exercicios.ExerciciosComplementaresII
         //284: 1+2+4+71+142=220 
         //1184 e 1210 também são amigos.  
 
-        static void Main(string[] args)
+        static void Main10(string[] args)
         {
             int[] valorA = new int[5];
             int[] valorB = new int[5];            

@@ -12,7 +12,7 @@ namespace ExerciciosComplementares_UnidadeVI
         //compradas pelo menos doze. Escreva um programa que leia o número de maçãs compradas, calcule e
         //escreva o valor total da compra.
 
-        static void Main1(string[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine(" ===== NOTA FISCAL ===== \n");
 
