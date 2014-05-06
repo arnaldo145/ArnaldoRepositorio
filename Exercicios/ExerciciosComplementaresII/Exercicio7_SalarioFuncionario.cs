@@ -56,7 +56,6 @@ namespace ExerciciosComplementares_UnidadeVI
             Console.ReadKey();
 
         }
-
         static string escolherOpcao()
         {
             Console.WriteLine("===== Cálculo de Salário ===== \nH - Horista\nM - Mensalista\nS - Sair\nInforme a categoria: ");
