@@ -32,6 +32,7 @@ namespace ExerciciosComplementares_UnidadeVI
                         Console.WriteLine("\nSALÁRIO BRUTO: R${0:F2}", salarioBruto);
                         Console.ReadKey();
                         break;
+
                     case "m":
                         Console.WriteLine("\n     MENSALISTA\n");
                         Console.Write("Informe o valor do salário por mês: ");
@@ -42,9 +43,11 @@ namespace ExerciciosComplementares_UnidadeVI
                         Console.WriteLine("\nSALÁRIO BRUTO: R${0:F2}", salarioBruto);                       
                         Console.ReadKey();
                         break;
+
                     case "s":
                         Console.WriteLine("\nAté Logo!");
                         break;
+
                     default:
                         Console.WriteLine("ATENÇÃO: Opção Inválida!");
                         Console.ReadKey();
