@@ -17,6 +17,7 @@ namespace ExerciciosComplementares_UnidadeVI
         {
             Console.Write("Informe a quantidade de trabalhadores contratados: ");
             int qtdTrabalhadores = int.Parse(Console.ReadLine());
+
             int[] codigo = new int[qtdTrabalhadores];
             int[] idade = new int[qtdTrabalhadores];
             int[] caixas = new int[qtdTrabalhadores];
@@ -31,7 +32,9 @@ namespace ExerciciosComplementares_UnidadeVI
                 Console.Write("Informe o número de caixas colhidas pelo trabalhador: ");
                 caixas[i] = int.Parse(Console.ReadLine());
             }
+
             Console.WriteLine("\n ===== FOLHA DE PAGAMENTO =====");
+
             for (int i = 0; i < qtdTrabalhadores; i++)
             {
                 double salarioTrabalhador = 0;
