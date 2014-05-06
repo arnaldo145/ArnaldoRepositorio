@@ -12,7 +12,7 @@ namespace ExerciciosComplementares_UnidadeVI
         //o salário por hora (horistas) ou por mês (mensalistas) e, o número de horas trabalhadas 
         //(horistas) ou o valor de faltas (mensalistas), calcular o valor do salário bruto.
 
-        static void Main7(string[] args)
+        static void Main(string[] args)
         {
             string opcao = null;
             double salarioBruto = 0;
@@ -71,7 +71,7 @@ namespace ExerciciosComplementares_UnidadeVI
         }
         static string escolherOpcao()
         {
-            Console.WriteLine("===== Cálculo de Salário ===== \nH - Horista\nM - Mensalista\nS - Sair\nInforme a categoria: ");
+            Console.Write("===== Cálculo de Salário ===== \nH - Horista\nM - Mensalista\nS - Sair\nInforme a categoria: ");
             string opcaoEscolhida = Console.ReadLine();
             return opcaoEscolhida;
         }
