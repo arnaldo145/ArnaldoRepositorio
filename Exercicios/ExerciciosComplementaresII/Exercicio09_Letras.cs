@@ -14,7 +14,7 @@ namespace Exercicios.ExerciciosComplementaresII
     //palavras dele.
     //A sua tarefa é, dado um texto qualquer, encontre a quantidade de buracos nele.
 
-    class Exercicio9_Letras
+    class Exercicio09_Letras
     {
         static void Main9(string[] args)
         {
