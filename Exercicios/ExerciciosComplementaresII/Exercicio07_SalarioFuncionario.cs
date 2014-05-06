@@ -22,32 +22,42 @@ namespace ExerciciosComplementares_UnidadeVI
                 opcao = escolherOpcao().ToLower();
                 switch (opcao)
                 {
+                    //Calculo do salário do horista
                     case "h":
                         Console.WriteLine("\n     HORISTA\n");
+
                         Console.Write("Informe o valor do salário por hora: ");
                         double salarioHora = double.Parse(Console.ReadLine());
                         Console.Write("Informe o número de horas trabalhadas: ");
                         int horasTrabalhadas = int.Parse(Console.ReadLine());
+
                         salarioBruto = salarioHora * horasTrabalhadas;
+
                         Console.WriteLine("\nSALÁRIO BRUTO: R${0:F2}", salarioBruto);
                         Console.ReadKey();
                         break;
-
+                    
+                    //Calculo do salário do mensalista
                     case "m":
                         Console.WriteLine("\n     MENSALISTA\n");
+
                         Console.Write("Informe o valor do salário por mês: ");
                         double salarioMes = double.Parse(Console.ReadLine());
                         Console.Write("Informe o valor de faltas: ");
                         double faltas = double.Parse(Console.ReadLine());
+
                         salarioBruto = salarioMes - faltas;
-                        Console.WriteLine("\nSALÁRIO BRUTO: R${0:F2}", salarioBruto);                       
+
+                        Console.WriteLine("\nSALÁRIO BRUTO: R${0:F2}", salarioBruto);
                         Console.ReadKey();
                         break;
 
+                    //Opção para sair do programa
                     case "s":
                         Console.WriteLine("\nAté Logo!");
                         break;
 
+                    //Opção Inválida
                     default:
                         Console.WriteLine("ATENÇÃO: Opção Inválida!");
                         Console.ReadKey();
