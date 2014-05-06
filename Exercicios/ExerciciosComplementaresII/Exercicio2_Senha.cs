@@ -8,7 +8,7 @@ namespace ExerciciosComplementares_UnidadeVI
 {
     class Exercicio2_Senha
     {
-        //2) Escreva um programa que verifique a validade de uma senha fornecida pelo usuário. A senha válida
+        //Escreva um programa que verifique a validade de uma senha fornecida pelo usuário. A senha válida
         //é o número NomeUsuário123. Devem ser impressas as seguintes mensagens: 
         //ACESSO PERMITIDO caso a senha seja válida. 
         //ACESSO NEGADO caso a senha seja inválida.
@@ -25,7 +25,6 @@ namespace ExerciciosComplementares_UnidadeVI
             do
             {
                 Console.Clear();
-
                 if (ContadorDias == 0)
                 {
                     Console.WriteLine("\nATENÇÃO: Senha deve ser alterada! \n");
@@ -38,9 +37,7 @@ namespace ExerciciosComplementares_UnidadeVI
                 {
                     Console.WriteLine("\nVocê deve alterar a senha em {0} dias \n", ContadorDias);
                 }
-
                 mostrarMenu();
-
                 Console.Write("\nInforme a opção desejada: ");
                 opcao = int.Parse(Console.ReadLine());
 
@@ -63,19 +60,15 @@ namespace ExerciciosComplementares_UnidadeVI
                         Console.WriteLine("\nInforme uma opção válida!");
                         break;
                 }
-
                 ContadorDias -= 1;
             } while (opcao != 3);
-
             Console.ReadKey();
         }
-
         static void mostrarMenu()
         {
             Console.WriteLine("  ===== MENU =====  ");
             Console.WriteLine("1 - ENTRAR NO SISTEMA \n2 - ALTERAR SENHA \n3 - SAIR\n");
         }
-
         static void entrarSistema()
         {
             Console.Write("\nInforme a senha: ");
@@ -90,14 +83,12 @@ namespace ExerciciosComplementares_UnidadeVI
             }
             Console.ReadKey();
         }
-
         static void alterarSenha()
         {
             Console.WriteLine("Informe a nova senha: ");
             string senhaInformada = Console.ReadLine();
             Console.WriteLine("Informe a senha atual para concluir alterações: ");
             string senhaAtual = Console.ReadLine();
-
             if (senhaAtual == Senha)
             {
                 Senha = senhaInformada;

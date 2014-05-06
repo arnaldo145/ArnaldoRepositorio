@@ -8,7 +8,7 @@ namespace ExerciciosComplementares_UnidadeVI
 {
     class Exercicio1_Macas
     {
-        //1) As maçãs custam R$ 0,30 cada se forem compradas menos do que uma dúzia, e R$ 0,25 se forem
+        //As maçãs custam R$ 0,30 cada se forem compradas menos do que uma dúzia, e R$ 0,25 se forem
         //compradas pelo menos doze. Escreva um programa que leia o número de maçãs compradas, calcule e
         //escreva o valor total da compra.
 
@@ -24,8 +24,7 @@ namespace ExerciciosComplementares_UnidadeVI
             {
                 Console.WriteLine("\nMaçãs: R${0:F2}", 0.30);
                 totalPagar = qtdMacas * 0.30;
-            }
-            else
+            } else
             {
                 Console.WriteLine("\nMaçãs: R${0:F2}", 0.25);
                 totalPagar = qtdMacas * 0.25;
@@ -34,6 +33,5 @@ namespace ExerciciosComplementares_UnidadeVI
             Console.WriteLine("Valor total da compra: R${0:F2}", totalPagar);
             Console.ReadKey();
         }
-
     }
 }

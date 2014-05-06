@@ -49,7 +49,6 @@ namespace Exercicios.ExerciciosComplementaresII
             }
             Console.ReadKey();
         }
-
         static bool verificarNumerosAmigos(int valor1, int valor2)
         {
             int somaMultiplosA = somarMultiplos(valor1);
@@ -64,7 +63,6 @@ namespace Exercicios.ExerciciosComplementaresII
                 return false;
             }
         }
-
         static int somarMultiplos(int valor)
         {
             int somaMultiplos = 0;

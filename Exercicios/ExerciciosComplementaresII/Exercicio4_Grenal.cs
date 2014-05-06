@@ -18,26 +18,21 @@ namespace ExerciciosComplementares_UnidadeVI
             Random gerador = new Random();
             int golsGremio = gerador.Next(0, 5);
             int golsInter = gerador.Next(0, 5);
-
             Console.WriteLine("===== GRENAL =====\n");
             Console.WriteLine("Grêmio: {0}", golsGremio);
             Console.WriteLine("Inter: {0}", golsInter);
-
             if (golsGremio > golsInter)
             {
                 Console.WriteLine("\nGrêmio venceu esse jogo!");
             }
-
             if (golsGremio == golsInter)
             {
                 Console.WriteLine("\nEmpate nesse jogo!");
             }
-
             if (golsGremio < golsInter)
             {
                 Console.WriteLine("\nInter venceu esse jogo!");
             }
-
             Console.ReadKey();
         }
     }

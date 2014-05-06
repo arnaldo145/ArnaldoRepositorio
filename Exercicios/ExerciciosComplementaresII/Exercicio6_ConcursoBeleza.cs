@@ -16,7 +16,6 @@ namespace ExerciciosComplementares_UnidadeVI
         static void Main6(string[] args)
         {
             Console.WriteLine(" ===== CONCURSO DE BELEZA =====");
-
             int contadorCandidatas = 0;
             string candidataMaisAlta = null;
             double alturaMaisAlta = 0;
@@ -27,7 +26,6 @@ namespace ExerciciosComplementares_UnidadeVI
             {
                 Console.Write("Informe o nome da candidata: ");
                 string nomeCandidata = Console.ReadLine();
-
                 if (nomeCandidata.ToLower() == "fim")
                 {
                     Console.WriteLine("\nCandidata mais alta: {0} \nAltura: {1}", candidataMaisAlta, alturaMaisAlta);
@@ -37,13 +35,11 @@ namespace ExerciciosComplementares_UnidadeVI
                 {
                     Console.Write("Informe a altura da candidata: ");
                     altura = double.Parse(Console.ReadLine());
-
                     if (altura > alturaMaisAlta)
                     {
                         alturaMaisAlta = altura;
                         candidataMaisAlta = nomeCandidata;
                     }
-
                     numeroCandidatas += 1;
                     contadorCandidatas += 1;
                 }
