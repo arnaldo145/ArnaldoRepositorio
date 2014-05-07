@@ -10,9 +10,9 @@ namespace UnidadeVII.ExerciciosSlide
     {
         static void Main1(string[] args)
         {
-            //Na classe com nome Operadores, implemente um programa em C# que utilize todos os operadores aritméticos.
-
             int resultado = 0;
+
+            //Na classe com nome Operadores, implemente um programa em C# que utilize todos os operadores aritméticos.
             resultado = 1 + 1;
             resultado = 2 - 1;
             resultado = 3 * 2;
