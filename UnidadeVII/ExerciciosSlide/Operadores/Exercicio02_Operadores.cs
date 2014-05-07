@@ -8,7 +8,7 @@ namespace UnidadeVII.ExerciciosSlide
 {
     class Exercicio02_OperadoresRelacionais
     {
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             int valor = 10;
 
