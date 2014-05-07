@@ -8,7 +8,7 @@ namespace UnidadeVII.ExerciciosSlide.Operadores
 {
     class Exercicios03_Operadores
     {
-        static void Main(string[] args)
+        static void Main3(string[] args)
         {
             //Operador Ternário
             int idade = 19;
