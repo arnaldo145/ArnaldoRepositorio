@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnidadeVI", "Exercicios\Uni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnidadeVII", "UnidadeVII\UnidadeVII.csproj", "{2702BD24-B6D9-4BB4-9B24-A9263A804580}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Medindo a Febre", "Medindo a Febre", "{D0473B35-79E1-4B32-91CE-4212BC4A45E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unidades", "Unidades", "{7C546A0B-FEFE-4EC0-BDA8-A16FCF686367}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedindoAFebreV", "MedindoAFebreV\MedindoAFebreV.csproj", "{FBDA4A42-159B-4A76-81AB-44AC8292AE52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +27,17 @@ Global
 		{2702BD24-B6D9-4BB4-9B24-A9263A804580}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2702BD24-B6D9-4BB4-9B24-A9263A804580}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2702BD24-B6D9-4BB4-9B24-A9263A804580}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBDA4A42-159B-4A76-81AB-44AC8292AE52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBDA4A42-159B-4A76-81AB-44AC8292AE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBDA4A42-159B-4A76-81AB-44AC8292AE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBDA4A42-159B-4A76-81AB-44AC8292AE52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FBDA4A42-159B-4A76-81AB-44AC8292AE52} = {D0473B35-79E1-4B32-91CE-4212BC4A45E7}
+		{762436A8-99B2-496C-B859-DA00E07F25D9} = {7C546A0B-FEFE-4EC0-BDA8-A16FCF686367}
+		{2702BD24-B6D9-4BB4-9B24-A9263A804580} = {7C546A0B-FEFE-4EC0-BDA8-A16FCF686367}
 	EndGlobalSection
 EndGlobal

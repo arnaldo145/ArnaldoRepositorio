@@ -21,13 +21,14 @@ namespace UnidadeVII.ExerciciosSlide.Operadores
             int valor = 5;
             Console.WriteLine(valor++);
 
-            valor = 5;
+            valor = 10;
             Console.WriteLine(++valor);
 
-            valor = 5;
+            valor = 25;
             Console.WriteLine(valor--);
 
-            valor = 5;
+            valor = 30
+                ;
             Console.WriteLine(--valor);
 
             Console.ReadKey();
