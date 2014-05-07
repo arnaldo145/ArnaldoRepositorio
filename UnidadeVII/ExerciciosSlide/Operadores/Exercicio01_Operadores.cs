@@ -20,7 +20,6 @@ namespace UnidadeVII.ExerciciosSlide
             resultado = 10 % 5;
 
             //Na pasta operadores, implemente um programa em C# que realize operações de divisão inteira e de casting.
-
             resultado = 5 / 2;
             Console.WriteLine((double)7 / 2);
 

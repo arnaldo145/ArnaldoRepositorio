@@ -41,8 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExerciciosSlide\Operadores\Exercicio01_OperadoresAritmeticos.cs" />
-    <Compile Include="ExerciciosSlide\Operadores\Exercicio02_OperadoresRelacionais.cs" />
+    <Compile Include="ExerciciosSlide\Operadores\Exercicio01_Operadores.cs" />
+    <Compile Include="ExerciciosSlide\Operadores\Exercicio02_Operadores.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
