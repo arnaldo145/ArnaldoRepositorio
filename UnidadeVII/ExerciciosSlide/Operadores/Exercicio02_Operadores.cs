@@ -15,16 +15,22 @@ namespace UnidadeVII.ExerciciosSlide
             //Operadores Atribuição
             valor += 5;
             Console.WriteLine("{0}", valor);
+
             valor -= 2;
             Console.WriteLine("{0}", valor);
+
             valor *= 2;
             Console.WriteLine("{0}", valor);
+
             valor /= 1;
             Console.WriteLine("{0}", valor);
+
             valor %= 3;
             Console.WriteLine("{0}", valor);
+
             valor++;
             Console.WriteLine("{0}", valor);
+
             valor--;
             Console.WriteLine("{0}", valor);
 
@@ -34,24 +40,32 @@ namespace UnidadeVII.ExerciciosSlide
             //Operadores Relacionais
             status = (num > 10);
             Console.WriteLine("{0} > 10: {1}", num, status);
+
             status = (num < 10);
             Console.WriteLine("{0} < 10: {1}", num, status);
+
             status = (num >= 10);
             Console.WriteLine("{0} >= 10: {1}", num, status);
+
             status = (num <= 10);
             Console.WriteLine("{0} <= 10: {1}", num, status);
+
             status = (num == 10);
             Console.WriteLine("{0} == 10: {1}", num, status);
+
             status = (num != 10);
             Console.WriteLine("{0} != 10: {1}", num, status);
 
             //Operadores Lógicos
             status = num > 5 && num < 10;
             Console.WriteLine("{0}", status);
+
             status = num > 5 & num < 10;
             Console.WriteLine("{0}", status);
+
             status = num > 5 | num < 10;
             Console.WriteLine("{0}", status);
+
             status = num > 5 || num < 10;
             Console.WriteLine("{0}", status);
 
