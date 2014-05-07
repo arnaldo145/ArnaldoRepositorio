@@ -12,6 +12,7 @@ namespace UnidadeVII.ExerciciosSlide
         {
             int valor = 10;
 
+            //Operadores Atribuição
             valor += 5;
             Console.WriteLine("{0}", valor);
             valor -= 2;
@@ -30,6 +31,7 @@ namespace UnidadeVII.ExerciciosSlide
             bool status = true;
             int num = 5;
 
+            //Operadores Relacionais
             status = (num > 10);
             Console.WriteLine("{0} > 10: {1}", num, status);
             status = (num < 10);
@@ -43,6 +45,7 @@ namespace UnidadeVII.ExerciciosSlide
             status = (num != 10);
             Console.WriteLine("{0} != 10: {1}", num, status);
 
+            //Operadores Lógicos
             status = num > 5 && num < 10;
             Console.WriteLine("{0}", status);
             status = num > 5 & num < 10;
