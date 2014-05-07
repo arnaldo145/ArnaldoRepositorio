@@ -12,16 +12,21 @@ namespace UnidadeVII.ExerciciosSlide.Operadores
         {
             //Operador Ternário
             int idade = 19;
+
             string resultado = (idade > 18 ? "Maior de idade" : "Menor");
+
             Console.WriteLine("{0}", resultado);
 
             //Pré-Incremento e Pós incremento
             int valor = 5;
             Console.WriteLine(valor++);
+
             valor = 5;
             Console.WriteLine(++valor);
+
             valor = 5;
             Console.WriteLine(valor--);
+
             valor = 5;
             Console.WriteLine(--valor);
 
