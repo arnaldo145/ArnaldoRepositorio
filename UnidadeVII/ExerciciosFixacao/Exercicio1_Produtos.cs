@@ -12,7 +12,7 @@ namespace UnidadeVII.ExerciciosFixacao
         //- o maior preço lido 
         //- a média aritmética dos preços dos produtos.
 
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             double maiorPreco = 0;
             double total = 0;

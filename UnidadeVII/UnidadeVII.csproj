@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExerciciosFixacao\Exercicio1_Produtos.cs" />
+    <Compile Include="ExerciciosFixacao\Exercicio2_Prefeitura.cs" />
     <Compile Include="ExerciciosSlide\Operadores\Exercicio01_Operadores.cs" />
     <Compile Include="ExerciciosSlide\Operadores\Exercicio02_Operadores.cs" />
     <Compile Include="ExerciciosSlide\Operadores\Exercicios03_Operadores.cs" />
