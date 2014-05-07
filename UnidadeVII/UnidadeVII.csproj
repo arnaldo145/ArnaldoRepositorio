@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExerciciosSlide\Exercicio01_OperadoresAritmeticos.cs" />
+    <Compile Include="ExerciciosSlide\Exercicio02_OperadoresRelacionais.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

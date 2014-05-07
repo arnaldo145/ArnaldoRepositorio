@@ -8,7 +8,7 @@ namespace UnidadeVII.ExerciciosSlide
 {
     class Exercicio01_OperadoresAritmeticos
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             //Na classe com nome Operadores, implemente um programa em C# que utilize todos os operadores aritméticos.
 
