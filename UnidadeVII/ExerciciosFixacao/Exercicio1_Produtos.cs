@@ -24,7 +24,6 @@ namespace UnidadeVII.ExerciciosFixacao
                 int codigo = int.Parse(Console.ReadLine());
                 Console.Write("Informe o preço do produto: ");
                 double preco = double.Parse(Console.ReadLine());
-
                 total += preco;
 
                 if (maiorPreco < preco)

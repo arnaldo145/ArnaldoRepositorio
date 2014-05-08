@@ -16,7 +16,7 @@ namespace UnidadeVII.ExerciciosFixacao
 //        d) Percentual de pessoas com salário menor que R$ 150,00 
 //        Obs.: O final da leituras dos dados se dará com a entrada de um “salário negativo”
 
-        static void Main2(string[] args)
+        static void Main(string[] args)
         {            
             double maiorSalario = 0;
 
@@ -41,7 +41,7 @@ namespace UnidadeVII.ExerciciosFixacao
 
                     countFilhos += qtdFilhos;
                     countSalario += salario;
-                    countHabitantes += 1;
+                    countHabitantes++;
 
                     if (salario < 150)
                     {
@@ -59,6 +59,7 @@ namespace UnidadeVII.ExerciciosFixacao
 
             Console.WriteLine("\nMédia de salário dos habitantes: {0:F2} \nMédia de número de filhos: {1}", calcularMediaSalario(countHabitantes, countSalario), calcularMediaFilhos(countFilhos, countHabitantes));
             Console.WriteLine("Maior salário: R${0} \nPercentual de habitantes que recebem menos de R$150: {1}%", maiorSalario, calcularPercentual(countHabitantes, countSalarioBaixo));
+            Console.WriteLine("Número de habitantes: {0}", countHabitantes);
             Console.ReadKey();            
         }
 
