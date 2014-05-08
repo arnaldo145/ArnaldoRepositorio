@@ -16,10 +16,9 @@ namespace UnidadeVII.ExerciciosFixacao
 //        d) Percentual de pessoas com salário menor que R$ 150,00 
 //        Obs.: O final da leituras dos dados se dará com a entrada de um “salário negativo”
 
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {            
             double maiorSalario = 0;
-            double percentualSalarioBaixo = 0;
 
             int countHabitantes = 0;
             int countSalarioBaixo = 0;
