@@ -10,6 +10,7 @@ namespace MedindoAFebreV
     {
         static void Main(string[] args)
         {
+            Console.ReadKey();
         }
     }
 }
