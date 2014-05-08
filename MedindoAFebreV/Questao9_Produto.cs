@@ -10,7 +10,8 @@ namespace MedindoAFebreV
     {
         static void Main9(string[] args)
         {
-            bool terminado = false;          
+            bool terminado = false;
+            Console.WriteLine(" ===== NOTA FISCAL =====\n");
 
             do
             {
@@ -47,7 +48,7 @@ namespace MedindoAFebreV
 
                 Console.WriteLine("\nTotal: R${0}\nDesconto: {1}% \nTotal a pagar: R${2}\n", total, desconto, totalPagar);
                 
-                Console.Write("\nDeseja continuar (S - Sim) / (N - Não): ");
+                Console.Write("\nDeseja continuar (S - Sim / N - Não): ");
                 string status = Console.ReadLine();
                 terminado = (status.ToUpper() == "N" ? true : false);
 

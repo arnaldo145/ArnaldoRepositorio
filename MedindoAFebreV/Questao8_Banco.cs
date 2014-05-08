@@ -8,8 +8,9 @@ namespace MedindoAFebreV
 {
     class Questao8_Banco
     {
-        static void Main(string[] args)
+        static void Main8(string[] args)
         {
+            Console.WriteLine(" ===== EXPEDIENTE DO BANCO =====\n");
             int countPessoas = 0;
             bool terminado = false;
             DateTime inicio = Convert.ToDateTime("10:00");
@@ -23,7 +24,7 @@ namespace MedindoAFebreV
 
                 countPessoas += (entrada >= inicio && entrada <= termino) ? 1 : 0;
 
-                Console.Write("Deseja continuar (1 - SIM / 2 - NÃO): ");
+                Console.Write("\nDeseja continuar (1 - SIM / 2 - NÃO): ");
                 int opcao = int.Parse(Console.ReadLine());
                 terminado = (opcao == 2 ? true : false);
             } while (terminado == false);

@@ -8,14 +8,12 @@ namespace MedindoAFebreV
 {
     class Program
     {
-        static void Main7(string[] args)
+        static void Main(string[] args)
         {
+            Console.WriteLine(" ===== VERIFICAÇÃO DE IDADE =====\n");
             Console.Write("Informe a idade: ");
             int idade = int.Parse(Console.ReadLine());
-
-            string status = idade >= 18 ? "Maior" : "Menor";
-
-            Console.WriteLine("Situação: {0} de idade", status);
+            Console.WriteLine("Situação: {0} de idade", idade >= 18 ? "Maior" : "Menor");
             Console.ReadKey();
         }
     }
