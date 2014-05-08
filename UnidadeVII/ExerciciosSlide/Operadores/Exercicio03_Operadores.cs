@@ -27,8 +27,7 @@ namespace UnidadeVII.ExerciciosSlide.Operadores
             valor = 25;
             Console.WriteLine(valor--);
 
-            valor = 30
-                ;
+            valor = 30;
             Console.WriteLine(--valor);
 
             Console.ReadKey();

@@ -8,7 +8,7 @@ namespace UnidadeVII.ExerciciosSlide.Operadores
 {
     class Exercicio04_OperadoresString
     {
-        static void Main(string[] args)
+        static void Maini(string[] args)
         {
             //Contar carcteres de um string
             string n = "Arnaldo";
@@ -36,6 +36,18 @@ namespace UnidadeVII.ExerciciosSlide.Operadores
             resultado2 = s.StartsWith("Java");
             Console.WriteLine(resultado1);
             Console.WriteLine(resultado2);
+
+
+            string s1 = "Arnaldo Madeira";
+            string s2 = s1.Substring(8);
+            string s3 = s1.Substring(0, 6);
+
+            Console.WriteLine(s2);
+            Console.WriteLine(s3);
+
+            s1 = "    Arnaldo    Madeira";
+            s2 = s1.Trim();
+            Console.WriteLine(s2);
 
             Console.ReadKey();
         }

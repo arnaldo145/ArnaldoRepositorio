@@ -15,7 +15,7 @@ namespace UnidadeVII.ExerciciosFixacao
         //    rbio rboi ribo riob roib robi
         //    obir obri oibr oirb orbi orib
 
-        static void Main4(string[] args)
+        static void Main(string[] args)
         {
 
         }
