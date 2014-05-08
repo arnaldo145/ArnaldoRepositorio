@@ -8,5 +8,9 @@ namespace UnidadeVII.ExerciciosSlide.Operadores
 {
     class Exercicio04_OperadoresString
     {
+        static void Main(string[] args)
+        {
+
+        }
     }
 }

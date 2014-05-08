@@ -19,7 +19,7 @@ namespace UnidadeVII.ExerciciosFixacao
 
             for (int i = 0; i < 15; i++)
             {
-                Console.WriteLine("Produto {0}: ", (i + 1));
+                Console.WriteLine("     Produto {0}", (i + 1));
                 Console.Write("Informe o código do produto: ");
                 int codigo = int.Parse(Console.ReadLine());
                 Console.Write("Informe o preço do produto: ");

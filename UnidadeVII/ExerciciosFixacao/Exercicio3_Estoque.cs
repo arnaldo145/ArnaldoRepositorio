@@ -21,7 +21,7 @@ namespace UnidadeVII.ExerciciosFixacao
 
             for (int i = 0; i < valorMercadoria.Length; i++)
             {
-                Console.Write("\nInforme o valor da mercadoria {0}: ", (i+1));
+                Console.Write("\nInforme o valor da mercadoria nº{0}: ", (i+1));
                 double valor = double.Parse(Console.ReadLine());
                 countTotal += valor;
             }

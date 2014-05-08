@@ -16,29 +16,25 @@ namespace UnidadeVII.ExerciciosFixacao
 //        d) Percentual de pessoas com salário menor que R$ 150,00 
 //        Obs.: O final da leituras dos dados se dará com a entrada de um “salário negativo”
 
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {            
             double maiorSalario = 0;
-
             int countHabitantes = 0;
             int countSalarioBaixo = 0;
             int countFilhos = 0;
             double countSalario = 0;
-
             bool terminado = false;
 
             do
             {
                 Console.Write("Informe o salário do habitante: ");
                 double salario = double.Parse(Console.ReadLine());
-
                 terminado = (salario < 0 ? true : false);
 
                 if (terminado == false)
                 {
                     Console.Write("Informe a quantidade de filhos: ");
                     int qtdFilhos = int.Parse(Console.ReadLine());
-
                     countFilhos += qtdFilhos;
                     countSalario += salario;
                     countHabitantes++;
