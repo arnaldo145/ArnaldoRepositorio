@@ -45,9 +45,20 @@ namespace UnidadeVII.ExerciciosSlide.Operadores
             Console.WriteLine(s2);
             Console.WriteLine(s3);
 
-            s1 = "    Arnaldo    Madeira";
+            s1 = "    Arnaldo    Madeira  ";
             s2 = s1.Trim();
             Console.WriteLine(s2);
+
+            DateTime dt = new DateTime(2010, 8, 27);
+
+            //Acrescentando 140 dias
+            dt.AddDays(140);
+
+            //Subtraindo 2 anos
+            dt.AddYears(-2);
+
+            //Acrescentando 2 segundos
+            dt.AddSeconds(20);
 
             Console.ReadKey();
         }
