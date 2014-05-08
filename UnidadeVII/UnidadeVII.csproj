@@ -47,7 +47,8 @@
     <Compile Include="ExerciciosFixacao\Exercicio4_Anagrama.cs" />
     <Compile Include="ExerciciosSlide\Operadores\Exercicio01_Operadores.cs" />
     <Compile Include="ExerciciosSlide\Operadores\Exercicio02_Operadores.cs" />
-    <Compile Include="ExerciciosSlide\Operadores\Exercicios03_Operadores.cs" />
+    <Compile Include="ExerciciosSlide\Operadores\Exercicio04_OperadoresString.cs" />
+    <Compile Include="ExerciciosSlide\Operadores\Exercicio03_Operadores.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

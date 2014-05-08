@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnidadeVII.ExerciciosSlide.Operadores
 {
-    class Exercicios03_Operadores
+    class Exercicio03_Operadores
     {
         static void Main3(string[] args)
         {
