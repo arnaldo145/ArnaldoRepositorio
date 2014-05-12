@@ -10,7 +10,7 @@ namespace UnidadeVII.ExerciciosFixacao
     {
          //Faça o programa que apresenta a seguinte saída, perguntando ao usuário o número máximo. Este número deve ser sempre ímpar.
 
-        public static void Main()
+        public static void Main5()
         {
             int valor = 0;
 
@@ -19,10 +19,7 @@ namespace UnidadeVII.ExerciciosFixacao
                 Console.Write("Informe o número máximo: ");
                 valor = int.Parse(Console.ReadLine());
 
-                if (valor % 2 == 0)
-                {
-                    Console.WriteLine("\nATENÇÃO: O valor informado deve ser impar!\n");
-                }
+                Console.WriteLine((valor % 2 == 0) ? "\nATENÇÃO: O valor informado deve ser impar!\n" : " \n");
             } while (valor % 2 == 0);
 
             int b = (valor - 1) / 2;
@@ -36,8 +33,10 @@ namespace UnidadeVII.ExerciciosFixacao
 
                Console.Write("\n");
 
-                for (int j = 0; j < (i + 1) * 2; j++)
-                    Console.Write(" ");
+               for (int j = 0; j < (i + 1) * 2; j++)
+               {
+                   Console.Write(" ");
+               }
             }
             
             Console.ReadKey();

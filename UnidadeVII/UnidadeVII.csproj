@@ -46,6 +46,7 @@
     <Compile Include="ExerciciosFixacao\Exercicio3_Estoque.cs" />
     <Compile Include="ExerciciosFixacao\Exercicio4_Anagrama.cs" />
     <Compile Include="ExerciciosFixacao\Exercicio5_Numeros.cs" />
+    <Compile Include="ExerciciosFixacao\Exercicio6_Dados.cs" />
     <Compile Include="ExerciciosSlide\Operadores\Exercicio01_Operadores.cs" />
     <Compile Include="ExerciciosSlide\Operadores\Exercicio02_Operadores.cs" />
     <Compile Include="ExerciciosSlide\Operadores\Exercicio04_OperadoresString.cs" />
