@@ -16,7 +16,7 @@ namespace UnidadeVII.ExerciciosFixacao
         //    obir obri oibr oirb orbi orib
         public static List<string> Anagramas = new List<string>();
 
-        public static void Main()
+        public static void Main4()
         {
             Console.Write("Digite uma palavra: ");
             string palavra = Console.ReadLine();
