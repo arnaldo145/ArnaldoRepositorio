@@ -18,12 +18,12 @@ namespace UnidadeVII.ExerciciosFixacao
 
         public static void Main()
         {
-            Console.WriteLine("Digite uma palavra:");
+            Console.Write("Digite uma palavra: ");
             string palavra = Console.ReadLine();
             if (palavra != null) Anagrama(palavra, palavra.Length);
             foreach (var anagrama in Anagramas)
             {
-                Console.Write("{0} ", anagrama);
+                Console.WriteLine("{0} ", anagrama);
             }
             Console.ReadKey();
         }
