@@ -14,39 +14,36 @@ namespace UnidadeVII.ExerciciosFixacao
         //    ibro ibor irbo irob iobr iorb
         //    rbio rboi ribo riob roib robi
         //    obir obri oibr oirb orbi orib
+        public static List<string> Anagramas = new List<string>();
 
-        static void Main(string[] args)
+        public static void Main()
         {
-            string biro = "biro";
-
-            Console.Write("{0}{1}{2}{3} ", biro[0].ToString(), biro[1].ToString(), biro[2].ToString(), biro[3].ToString()); //biro
-            Console.Write("{0}{1}{2}{3} ", biro[0].ToString(), biro[1].ToString(), biro[3].ToString(), biro[2].ToString()); //bior
-            Console.Write("{0}{1}{2}{3} ", biro[0].ToString(), biro[2].ToString(), biro[1].ToString(), biro[3].ToString()); //brio
-            Console.Write("{0}{1}{2}{3} ", biro[0].ToString(), biro[2].ToString(), biro[3].ToString(), biro[1].ToString()); //broi
-            Console.Write("{0}{1}{2}{3} ", biro[0].ToString(), biro[3].ToString(), biro[1].ToString(), biro[2].ToString()); //boir
-            Console.WriteLine("{0}{1}{2}{3}", biro[0].ToString(), biro[3].ToString(), biro[2].ToString(), biro[1].ToString()); //bori
-
-            Console.Write("{0}{1}{2}{3} ", biro[1].ToString(), biro[0].ToString(), biro[2].ToString(), biro[3].ToString()); //ibro
-            Console.Write("{0}{1}{2}{3} ", biro[1].ToString(), biro[0].ToString(), biro[3].ToString(), biro[2].ToString()); //ibor
-            Console.Write("{0}{1}{2}{3} ", biro[1].ToString(), biro[2].ToString(), biro[0].ToString(), biro[3].ToString()); //irbo
-            Console.Write("{0}{1}{2}{3} ", biro[1].ToString(), biro[2].ToString(), biro[3].ToString(), biro[0].ToString()); //irob
-            Console.Write("{0}{1}{2}{3} ", biro[1].ToString(), biro[3].ToString(), biro[0].ToString(), biro[2].ToString()); //iobr
-            Console.WriteLine("{0}{1}{2}{3}", biro[1].ToString(), biro[3].ToString(), biro[2].ToString(), biro[0].ToString()); //iorb
-
-            Console.Write("{0}{1}{2}{3} ", biro[2].ToString(), biro[0].ToString(), biro[1].ToString(), biro[3].ToString()); //rbio
-            Console.Write("{0}{1}{2}{3} ", biro[2].ToString(), biro[0].ToString(), biro[3].ToString(), biro[1].ToString()); //rboi
-            Console.Write("{0}{1}{2}{3} ", biro[2].ToString(), biro[1].ToString(), biro[0].ToString(), biro[3].ToString()); //ribo
-            Console.Write("{0}{1}{2}{3} ", biro[2].ToString(), biro[1].ToString(), biro[3].ToString(), biro[0].ToString()); //riob
-            Console.Write("{0}{1}{2}{3} ", biro[2].ToString(), biro[3].ToString(), biro[1].ToString(), biro[2].ToString()); //roib
-            Console.WriteLine("{0}{1}{2}{3}", biro[2].ToString(), biro[3].ToString(), biro[0].ToString(), biro[1].ToString()); //robi
-
-            Console.Write("{0}{1}{2}{3} ", biro[3].ToString(), biro[0].ToString(), biro[1].ToString(), biro[2].ToString()); //obir
-            Console.Write("{0}{1}{2}{3} ", biro[3].ToString(), biro[0].ToString(), biro[1].ToString(), biro[1].ToString()); //obri
-            Console.Write("{0}{1}{2}{3} ", biro[3].ToString(), biro[1].ToString(), biro[0].ToString(), biro[2].ToString()); //oibr
-            Console.Write("{0}{1}{2}{3} ", biro[3].ToString(), biro[1].ToString(), biro[2].ToString(), biro[0].ToString()); //oirb
-            Console.Write("{0}{1}{2}{3} ", biro[3].ToString(), biro[2].ToString(), biro[0].ToString(), biro[1].ToString()); //orbi
-            Console.Write("{0}{1}{2}{3}", biro[3].ToString(), biro[2].ToString(), biro[1].ToString(), biro[0].ToString()); //orib
+            Console.WriteLine("Digite uma palavra:");
+            string palavra = Console.ReadLine();
+            if (palavra != null) Anagrama(palavra, palavra.Length);
+            foreach (var anagrama in Anagramas)
+            {
+                Console.Write("{0} ", anagrama);
+            }
             Console.ReadKey();
+        }
+
+        public static void Anagrama(string palavra, int tamanho)
+        {
+            if (tamanho == 1)
+            {
+                if (!Anagramas.Contains(palavra))
+                    Anagramas.Add(palavra);
+            }
+            else
+            {
+                string palavraAtual = palavra;
+                for (int i = 0; i < tamanho; i++)
+                {
+                    palavraAtual = palavraAtual.Substring(1, tamanho - 1) + palavraAtual[0] + palavraAtual.Substring(tamanho);
+                    Anagrama(palavraAtual, tamanho - 1);
+                }
+            }
         }
     }
 }
