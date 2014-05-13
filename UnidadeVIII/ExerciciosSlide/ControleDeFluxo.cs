@@ -58,12 +58,9 @@ namespace UnidadeVIII.ExerciciosSlide
             if (a % b == 0)
             {
                 Console.WriteLine("\n{0} é divisivel por {1}", a, b);
-            }
-            else
-            {
+            } else {
                 Console.WriteLine("\n{0} não é divisivel por {1}", a, b);
             }
-
             Console.ReadKey();
         }
     }
