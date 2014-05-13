@@ -24,7 +24,7 @@ namespace UnidadeVIII.ExerciciosSlide
             //Verifica Valor do Produto
             double valor = gerador.NextDouble();
             Console.WriteLine("\nPreço: R${0:F2}",valor);
-            if(valor > 0.5) {
+            if (valor > 0.5) {
                 Console.WriteLine("Preço é caro");
             } else {
                 Console.WriteLine("Preço é caro");
@@ -53,11 +53,28 @@ namespace UnidadeVIII.ExerciciosSlide
             int b = gerador.Next(1,100);
 
             if (a % b == 0) {
-                Console.WriteLine("\n{0} é divisivel por {1}", a, b);
+                Console.WriteLine("\n{0} é divisivel por {1}\n", a, b);
             } else {
-                Console.WriteLine("\n{0} não é divisivel por {1}", a, b);
+                Console.WriteLine("\n{0} não é divisivel por {1}\n", a, b);
             }
-            Console.ReadKey();
+
+            //InstruçõesRepetições
+            for (int i = 1; i <= 5; i++)
+            {
+                Console.WriteLine("NDDigital Technologies {0}", i);
+            }
+
+            Console.WriteLine(" ");
+
+            //Imprime100
+            int z = 1;
+            while (z <= 100)
+            {
+                Console.WriteLine("{0}", z);
+                z++;
+            }
+
+                Console.ReadKey();
         }
     }
 }
