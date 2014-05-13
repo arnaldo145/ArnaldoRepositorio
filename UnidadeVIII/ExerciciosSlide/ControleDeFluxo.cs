@@ -74,7 +74,19 @@ namespace UnidadeVIII.ExerciciosSlide
                 z++;
             }
 
-                Console.ReadKey();
+            Console.WriteLine(" ");
+
+            //Imprime100ExcetoMultiplo3
+            z = 1;
+            while (z <= 100)
+            {
+                if(z % 3 != 0){
+                    Console.WriteLine("{0}", z);
+                }                
+                z++;
+            }
+
+            Console.ReadKey();
         }
     }
 }
