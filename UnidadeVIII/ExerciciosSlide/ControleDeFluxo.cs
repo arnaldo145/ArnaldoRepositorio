@@ -14,6 +14,7 @@ namespace UnidadeVIII.ExerciciosSlide
 
             //Aprovado-Reprovado   
             double nota = gerador.NextDouble();
+            Console.WriteLine("Nota: {0:F1}", nota);
             if (nota > 0.7)
             {
                 Console.WriteLine("Aluno foi aprovado");
@@ -22,7 +23,8 @@ namespace UnidadeVIII.ExerciciosSlide
             }
 
             //Verifica Valor do Produto
-            double valor = gerador.NextDouble(); 
+            double valor = gerador.NextDouble();
+            Console.WriteLine("\nPreço: R${0:F2}",valor);
             if(valor > 0.5){
                 Console.WriteLine("Preço é caro");
             } else {
@@ -31,6 +33,7 @@ namespace UnidadeVIII.ExerciciosSlide
 
             //EscolheCaminho
             double caminho = gerador.NextDouble();
+            Console.WriteLine("\nCaminho: {0:F2}", caminho);
             if (caminho > 0.5)
             {
                 Console.WriteLine("Siga para direita");
@@ -40,6 +43,7 @@ namespace UnidadeVIII.ExerciciosSlide
 
             //EscolheRoupa
             double roupa = gerador.NextDouble();
+            Console.WriteLine("\nRoupa: {0:F2}", roupa);
             if (caminho > 0.5)
             {
                 Console.WriteLine("Vista uma camisa vermelha");
@@ -53,11 +57,11 @@ namespace UnidadeVIII.ExerciciosSlide
 
             if (a % b == 0)
             {
-                Console.WriteLine("{0} é divisivel por {1}", a, b);
+                Console.WriteLine("\n{0} é divisivel por {1}", a, b);
             }
             else
             {
-                Console.WriteLine("{0} não é divisivel por {1}", a, b);
+                Console.WriteLine("\n{0} não é divisivel por {1}", a, b);
             }
 
             Console.ReadKey();
