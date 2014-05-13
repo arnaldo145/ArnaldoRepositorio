@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unidades", "Unidades", "{7C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedindoAFebre", "MedindoAFebreV\MedindoAFebre.csproj", "{FBDA4A42-159B-4A76-81AB-44AC8292AE52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnidadeVIII", "UnidadeVIII\UnidadeVIII.csproj", "{855DF3A5-FBB4-450A-9611-CF313D3DE80D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{FBDA4A42-159B-4A76-81AB-44AC8292AE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBDA4A42-159B-4A76-81AB-44AC8292AE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBDA4A42-159B-4A76-81AB-44AC8292AE52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{855DF3A5-FBB4-450A-9611-CF313D3DE80D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{855DF3A5-FBB4-450A-9611-CF313D3DE80D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{855DF3A5-FBB4-450A-9611-CF313D3DE80D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{855DF3A5-FBB4-450A-9611-CF313D3DE80D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2702BD24-B6D9-4BB4-9B24-A9263A804580} = {7C546A0B-FEFE-4EC0-BDA8-A16FCF686367}
 		{762436A8-99B2-496C-B859-DA00E07F25D9} = {7C546A0B-FEFE-4EC0-BDA8-A16FCF686367}
+		{855DF3A5-FBB4-450A-9611-CF313D3DE80D} = {7C546A0B-FEFE-4EC0-BDA8-A16FCF686367}
 		{FBDA4A42-159B-4A76-81AB-44AC8292AE52} = {D0473B35-79E1-4B32-91CE-4212BC4A45E7}
 	EndGlobalSection
 EndGlobal

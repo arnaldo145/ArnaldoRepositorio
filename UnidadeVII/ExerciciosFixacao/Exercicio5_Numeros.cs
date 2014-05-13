@@ -37,8 +37,7 @@ namespace UnidadeVII.ExerciciosFixacao
                {
                    Console.Write(" ");
                }
-            }
-            
+            }            
             Console.ReadKey();
         }
     }
