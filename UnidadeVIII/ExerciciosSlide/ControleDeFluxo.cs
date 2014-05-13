@@ -86,6 +86,16 @@ namespace UnidadeVIII.ExerciciosSlide
                 z++;
             }
 
+            Console.WriteLine(" ");
+
+            //DivideMaiorInteiro
+            int valorMaximo = 2147483647;
+            do
+            {
+                valorMaximo /= 2;
+                Console.WriteLine(valorMaximo);
+            } while (valorMaximo > 100);  
+
             Console.ReadKey();
         }
     }
