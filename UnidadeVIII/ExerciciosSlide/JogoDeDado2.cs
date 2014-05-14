@@ -8,7 +8,7 @@ namespace UnidadeVIII.ExerciciosSlide
 {
     class JogoDeDado2
     {
-        public static void Main()
+        public static void Main2()
         {
             int count = 0;
 
