@@ -8,7 +8,7 @@ namespace UnidadeVIII.ExerciciosSlide
 {
     class ControleDeFluxo
     {
-        public static void Main()
+        public static void Main1()
         {
             Random gerador = new Random();
 
