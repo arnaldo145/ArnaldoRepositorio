@@ -17,12 +17,17 @@ namespace UnidadeVIII.ExerciciosComplementares
         public static void Main()
         {
             Console.WriteLine("Controle do Estacionamento");
+            int apart = 0;
 
             for (int i = 1; i <= 3; i++)
             {             
                 for (int j = 1; j <= 9; j++)
-                {
-                    Console.WriteLine("Bloco: {0} \nAndar: {0}º\n", i, j);
+                {                    
+                    for (int k = 1; k <= 4; k++)
+                    {
+                        apart = (j * 10) + k;
+                        Console.WriteLine("Bloco: {0} \nAndar: {1}º\nApartamento: {2}", i, j, apart);
+                    }
                 }
             }
 
