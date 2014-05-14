@@ -8,7 +8,7 @@ namespace UnidadeVIII.ExerciciosSlide
 {
     class FraseCastigo
     {
-        public static void Main()
+        public static void Main2()
         {
             while (1 < 2)
             {

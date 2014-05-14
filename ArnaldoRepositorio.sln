@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Medindo a Febre", "Medindo 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unidades", "Unidades", "{7C546A0B-FEFE-4EC0-BDA8-A16FCF686367}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedindoAFebre", "MedindoAFebreV\MedindoAFebre.csproj", "{FBDA4A42-159B-4A76-81AB-44AC8292AE52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedindoAFebreV", "MedindoAFebreV\MedindoAFebreV.csproj", "{FBDA4A42-159B-4A76-81AB-44AC8292AE52}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnidadeVIII", "UnidadeVIII\UnidadeVIII.csproj", "{855DF3A5-FBB4-450A-9611-CF313D3DE80D}"
 EndProject
