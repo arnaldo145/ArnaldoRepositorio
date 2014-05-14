@@ -14,10 +14,11 @@ namespace UnidadeVIII.ExerciciosComplementares
         //Apartamentos são: 11, 12, 13 e 14. 
         //No segundo andar, os números dos apartamentos são: 21, 22, 23 e 24. Nos outros andares, a lógica de numeração é a mesma. 
 
-        public static void Main()
+        public static void Main3()
         {
             Console.WriteLine("Controle do Estacionamento");
             int apart = 0;
+            int count = 0;
 
             for (int i = 1; i <= 3; i++)
             {             
@@ -26,11 +27,14 @@ namespace UnidadeVIII.ExerciciosComplementares
                     for (int k = 1; k <= 4; k++)
                     {
                         apart = (j * 10) + k;
-                        Console.WriteLine("Bloco: {0} \nAndar: {1}º\nApartamento: {2}", i, j, apart);
+                        Console.WriteLine("Bloco: {0} \nAndar: {1}º\nApartamento: {2}\n____________________", i, j, apart);
+                        count ++;
                     }
+                    Console.WriteLine(" ");
                 }
             }
 
+            Console.WriteLine("Número de cartões: {0}", count);
             Console.ReadKey();
         }
     }

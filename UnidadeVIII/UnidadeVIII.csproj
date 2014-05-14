@@ -44,6 +44,7 @@
     <Compile Include="ExerciciosComplementares\Exercicio1.cs" />
     <Compile Include="ExerciciosComplementares\Exercicio2.cs" />
     <Compile Include="ExerciciosComplementares\Exercicio3.cs" />
+    <Compile Include="ExerciciosComplementares\Exercicio4.cs" />
     <Compile Include="ExerciciosSlide\ControleDeFluxo.cs" />
     <Compile Include="ExerciciosSlide\FraseCastigo.cs" />
     <Compile Include="ExerciciosSlide\JogoDeDado.cs" />
