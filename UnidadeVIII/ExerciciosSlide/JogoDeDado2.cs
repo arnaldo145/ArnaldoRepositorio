@@ -6,23 +6,22 @@ using System.Threading.Tasks;
 
 namespace UnidadeVIII.ExerciciosSlide
 {
-    class JogoDeDado
+    class JogoDeDado2
     {
-        public static void Main2()
+        public static void Main()
         {
             int count = 0;
 
-            Console.WriteLine("Jogo de dados: ");
-
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 4; i++)
             {
                 int result = jogarDados();
                 Console.WriteLine(result);
-                count += result;
+                if (result % 2 != 0){
+                    count += result;
+                }
             }
 
-            if (count > 19)
-            {
+            if (count > 9){
                 Console.WriteLine("Ganhou! Pontos obtidos: {0}", count);
             }
             else
@@ -35,7 +34,7 @@ namespace UnidadeVIII.ExerciciosSlide
         static int jogarDados()
         {
             Random gerador = new Random();
-            return gerador.Next(1,6);
+            return gerador.Next(1, 6);
         }
     }
 }

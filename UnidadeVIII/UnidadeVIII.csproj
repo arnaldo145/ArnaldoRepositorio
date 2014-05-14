@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ExerciciosSlide\ControleDeFluxo.cs" />
     <Compile Include="ExerciciosSlide\JogoDeDado.cs" />
+    <Compile Include="ExerciciosSlide\JogoDeDado2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
