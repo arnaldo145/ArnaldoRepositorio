@@ -94,9 +94,24 @@ namespace UnidadeVIII.ExerciciosSlide
             {
                 valorMaximo /= 2;
                 Console.WriteLine(valorMaximo);
-            } while (valorMaximo > 100);  
+            } while (valorMaximo > 100);
 
-            Console.ReadKey();
+            Console.WriteLine(" ");
+
+            //GeradorDeIngressos
+            int countIngressos = 0;
+
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 20; j++)
+                {
+                    countIngressos++;
+                    Console.Write("{0} ", countIngressos);
+                }
+                Console.WriteLine(" ");
+            }
+
+                Console.ReadKey();
         }
     }
 }
