@@ -12,7 +12,7 @@ namespace UnidadeVIII.ExerciciosComplementares
         //Além disso, esse programa deve contabilizar a quantidade de dígitos “1” 
         //do número aleatório e exibir essa quantidade no terminal. Complete o código abaixo.
 
-        public static void Main()
+        public static void Main6()
         {
             Random gerador = new Random();
             int valorAleatorio = gerador.Next();
@@ -21,13 +21,11 @@ namespace UnidadeVIII.ExerciciosComplementares
             var valor = valorAleatorio.ToString().ToCharArray();
             for (int i = 0; i < valor.Length; i++)
             {
-                if(valor[i] == '1'){
-                    count++;
-                }
+                if(valor[i] == '1')
+                    count++;                
             }
 
             Console.WriteLine("Valor aleatório: {0} \nQuantidade de dígitos 1: {1}", valorAleatorio, count);
-
             Console.ReadKey();
         }
     }
