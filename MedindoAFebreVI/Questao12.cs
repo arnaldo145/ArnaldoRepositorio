@@ -21,6 +21,7 @@ namespace MedindoAFebreVI
             for (int i = 0; i < 100; i++)
             {
                 numMatricula++;
+                Console.WriteLine("Matricula: {0}", numMatricula);
 
                 //Considerando que a nota seja de 0 a 100
                 int nota1 = gerador.Next(0, 100);
