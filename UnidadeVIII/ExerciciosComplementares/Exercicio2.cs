@@ -18,7 +18,6 @@ namespace UnidadeVIII.ExerciciosComplementares
 
             while (i < 2)
             {
-
                 for (int j = 0; j < 5; j++)
                 {
                     espaco(count);
@@ -29,7 +28,6 @@ namespace UnidadeVIII.ExerciciosComplementares
                 Console.WriteLine(" ");
                 i++;
             }
-
             Console.ReadKey();
         }
 

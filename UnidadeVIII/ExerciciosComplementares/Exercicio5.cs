@@ -24,28 +24,22 @@ namespace UnidadeVIII.ExerciciosComplementares
                 Console.WriteLine(result);
 
                 if (result == 6)
-                {
                     countSeis++;
-                }
 
                 if (countSeis == 2)
                 {
                     perdeu = true;
                     break;
-                }
+                }                    
 
-                if(result != 1){
+                if (result != 1)
                     count += result;
-                }                
             }
 
-            if(!perdeu){
+            if (!perdeu)
                 Console.WriteLine("Você ganhou! {0} pontos", count);
-            }
             else
-            {
                 Console.WriteLine("Você perdeu!");
-            }
 
             Console.ReadKey();
         }

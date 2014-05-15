@@ -21,7 +21,7 @@ namespace UnidadeVIII.ExerciciosComplementares
 
             Console.WriteLine("Valor 1: {0} \nValor 2: {1}", num1, num2);
 
-            if(num1 > num2)
+            if (num1 > num2)
                 Console.WriteLine("Primeiro > Segundo");
 
             if (num2 > num1)

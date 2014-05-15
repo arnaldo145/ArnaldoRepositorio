@@ -33,7 +33,6 @@ namespace UnidadeVIII.ExerciciosComplementares
                     Console.WriteLine(" ");
                 }
             }
-
             Console.WriteLine("Número de cartões: {0}", count);
             Console.ReadKey();
         }
