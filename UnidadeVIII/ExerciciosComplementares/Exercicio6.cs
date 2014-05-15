@@ -12,7 +12,7 @@ namespace UnidadeVIII.ExerciciosComplementares
         //Além disso, esse programa deve contabilizar a quantidade de dígitos “1” 
         //do número aleatório e exibir essa quantidade no terminal. Complete o código abaixo.
 
-        public static void Main6()
+        public static void Main()
         {
             Random gerador = new Random();
             int valorAleatorio = gerador.Next();

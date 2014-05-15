@@ -9,7 +9,7 @@ namespace UnidadeVIII.ExerciciosComplementares
     class Exercicio4
     {
         //Escreva um programa em C# que exiba no terminal a tabuada dos números de 1 a 10 de acordo com o padrão abaixo.
-        public static void Main()
+        public static void Main4()
         {
             for (int i = 1; i <= 10; i++)
             {
