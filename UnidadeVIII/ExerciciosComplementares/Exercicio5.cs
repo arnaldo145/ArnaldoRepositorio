@@ -12,7 +12,7 @@ namespace UnidadeVIII.ExerciciosComplementares
         //valores obtidos nos lançamentos for ímpar. Se o número 6 for sorteado 2 vezes o jogador 
         //perde imediatamente. O número 1 deve ser desconsiderado na somatória. Implemente um programa
         //em C# para simular a execução desse jogo
-        public static void Main()
+        public static void Main5()
         {
             int count = 0;
             int countSeis = 0;
