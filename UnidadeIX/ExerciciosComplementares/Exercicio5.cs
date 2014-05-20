@@ -13,7 +13,7 @@ namespace UnidadeIX.ExerciciosComplementares
         //número de acertos. Mostre o nº de acertos do aluno e uma mensagem APROVADO, se a nota for maior ou igual a 6; e mostre uma 
         //mensagem de REPROVADO, caso contrário.
 
-        static void Main(string[] args)
+        static void Main5(string[] args)
         {
             Random gerador = new Random();
             char[] gabarito = new char[10];
@@ -34,10 +34,11 @@ namespace UnidadeIX.ExerciciosComplementares
                 Console.WriteLine(" ----- Aluno {0} -----", (i + 1));
 
                 char[] resposta = new char[10];
-
+                Console.Write("\nRespostas: ");
                 for (int j = 0; j < resposta.Length; j++)
                 {
                     resposta[j] = questoes[gerador.Next(0, questoes.Length)];
+                    Console.Write("{0} ", resposta[j]);
                     if(resposta[j] == gabarito[j]){
                         count++;
                     }

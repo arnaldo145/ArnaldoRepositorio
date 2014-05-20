@@ -46,6 +46,7 @@
     <Compile Include="ExerciciosComplementares\Exercicio3.cs" />
     <Compile Include="ExerciciosComplementares\Exercicio4.cs" />
     <Compile Include="ExerciciosComplementares\Exercicio5.cs" />
+    <Compile Include="ExerciciosComplementares\Exercicio6.cs" />
     <Compile Include="ExerciciosFixacao\SequenciaAleatoria.cs" />
     <Compile Include="ExerciciosFixacao\SequenciaCrescente.cs" />
     <Compile Include="ExerciciosFixacao\SequenciaDecrescente.cs" />
