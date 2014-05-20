@@ -17,7 +17,7 @@ namespace UnidadeIX.ExerciciosComplementares
         {
             Random gerador = new Random();
             char[] gabarito = new char[10];
-            char[] questoes = new char[]{'A', 'B', 'C', 'D'};
+            char[] questoes = new char[]{'A', 'B', 'C', 'D', 'E'};
 
             Console.WriteLine(" ===== Gabarito ===== \n");
             for (int i = 0; i < gabarito.Length; i++)
