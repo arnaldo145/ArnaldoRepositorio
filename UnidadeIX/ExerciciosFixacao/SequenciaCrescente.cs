@@ -20,7 +20,6 @@ namespace ConsoleApplication1
                 valores[i] = (i + 1);
                 Console.WriteLine("Valores na posição {0}: {1}", i, valores[i]);
             }
-
             Console.ReadKey();
         }
     }

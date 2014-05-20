@@ -22,7 +22,6 @@ namespace ConsoleApplication1
             {
                 Console.WriteLine("Valor na posição {0}: {1}", i, valores[i]);
             }
-
             Console.ReadKey();
         }
     }

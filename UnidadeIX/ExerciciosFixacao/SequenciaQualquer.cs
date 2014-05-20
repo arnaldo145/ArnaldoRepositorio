@@ -22,7 +22,6 @@ namespace ConsoleApplication1
                 valores[i] = gerador.Next(0, 1000);
                 Console.WriteLine("Valor na posição {0}: {1}", i, valores[i]);
             }
-
             Console.ReadKey();
         }
     }

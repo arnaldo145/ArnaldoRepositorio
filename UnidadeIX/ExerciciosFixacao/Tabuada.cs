@@ -25,7 +25,6 @@ namespace ConsoleApplication1
                 }
                 Console.WriteLine(" ");
             }
-
             Console.ReadKey();
         }
     }

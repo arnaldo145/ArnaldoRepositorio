@@ -14,7 +14,6 @@ namespace ConsoleApplication1
         static void Main7(string[] args)
         {
             int[,] valores = new int[3, 2];
-
             for (int i = 0; i < 3; i++)
 			{
                 for (int j = 0; j < 2; j++)
@@ -23,9 +22,7 @@ namespace ConsoleApplication1
                     valores[i,j] = int.Parse(Console.ReadLine());
 			    }
 			}
-
             Console.WriteLine(" ");
-
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 2; j++)
@@ -34,7 +31,6 @@ namespace ConsoleApplication1
                 }
                 Console.WriteLine(" ");
             }
-
             Console.ReadKey();
         }
     }
