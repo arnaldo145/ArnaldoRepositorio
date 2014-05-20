@@ -18,19 +18,19 @@ namespace UnidadeIX.ExerciciosComplementares
             int[] gabarito = new int[13];
             Random gerador = new Random();
 
-            Console.WriteLine(" ===== GABARITO =====\n ");
+            Console.WriteLine(" ===== GABARITO ===== ");
             for (int i = 0; i < gabarito.Length; i++)
             {
                 gabarito[i] = gerador.Next(1, 4);
-                Console.WriteLine("Jogada {0}: {1}", (i + 1), gabarito[i]);
+                Console.WriteLine("Jogada {0}: Coluna {1}", (i + 1), gabarito[i]);
             }
 
-            int[] numeroCartao = new int[10];
+            int[] numeroCartao = new int[15];
 
             for (int i = 0; i < numeroCartao.Length; i++)
             {
-                Console.WriteLine("\n ===== JOGADOR {0} ===== \n", (i + 1));
-                numeroCartao[i] = gerador.Next();
+                Console.WriteLine("\n ===== JOGADOR {0} =====", (i + 1));
+                numeroCartao[i] = gerador.Next(0,100);
                 Console.WriteLine("Número do cartão: {0}", numeroCartao[i]);
                 int[] respostas = new int[13];
                 int countAcertos = 0;
@@ -38,17 +38,17 @@ namespace UnidadeIX.ExerciciosComplementares
                 for (int j = 0; j < respostas.Length; j++)
                 {
                     respostas[j] = gerador.Next(1, 4);
-                    Console.WriteLine("Jogada {0}: {1}", (j + 1), respostas[j]);
+                    Console.WriteLine("Jogada {0}: Coluna {1}", (j + 1), respostas[j]);
 
                     if (respostas[j] == gabarito[j])                    
                         countAcertos++;                    
                 }
-                Console.WriteLine("\nAcertos: {0}", countAcertos);
+                Console.WriteLine("Acertos: {0}", countAcertos);
 
                 if (countAcertos == 13)
                     Console.WriteLine("GANHADOR!");
                 else
-                    Console.WriteLine("Não ganhou!");
+                    Console.WriteLine("NÃO GANHOU!");
             }
             Console.ReadKey();
         }
