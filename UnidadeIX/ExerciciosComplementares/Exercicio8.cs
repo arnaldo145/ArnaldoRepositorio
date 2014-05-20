@@ -32,13 +32,28 @@ namespace UnidadeIX.ExerciciosComplementares
                 Console.WriteLine("\n ===== JOGADOR {0} =====", (i + 1));
                 numeroCartao[i] = gerador.Next(0,100);
                 Console.WriteLine("Número do cartão: {0}", numeroCartao[i]);
+
                 int[] respostas = new int[13];
                 int countAcertos = 0;
 
                 for (int j = 0; j < respostas.Length; j++)
                 {
                     respostas[j] = gerador.Next(1, 4);
-                    Console.WriteLine("Jogada {0}: Coluna {1}", (j + 1), respostas[j]);
+
+                    if(respostas[j] == 1)
+                    {
+                        Console.WriteLine("Jogada {0}: X   -   -", (j + 1), respostas[j]);
+                    }
+
+                    if (respostas[j] == 2)
+                    {
+                        Console.WriteLine("Jogada {0}: -   -   X", (j + 1), respostas[j]);
+                    }
+
+                    if (respostas[j] == 3)
+                    {
+                        Console.WriteLine("Jogada {0}: -   X   -", (j + 1), respostas[j]);
+                    }
 
                     if (respostas[j] == gabarito[j])                    
                         countAcertos++;                    
