@@ -15,9 +15,7 @@ namespace UnidadeIX.ExerciciosComplementares
         static void Main2(string[] args)
         {
             Console.WriteLine(" ===== CONTROLE DE ESTACIONAMENTO ===== ");
-
             Console.WriteLine("\nO - Ocupado / L - Livre \n");
-
             char[,] tabelaEstacionamento = new char[4, 10];
             Random gerador = new Random();
 
@@ -29,17 +27,13 @@ namespace UnidadeIX.ExerciciosComplementares
                     //Intervalo do Random termina em 3 para que apareça número 2
                     int status = gerador.Next(1, 3);
 
-                    if (status == 1)
-                    {
-                        tabelaEstacionamento[i, j] = 'O';
-                    }
-                    if (status == 2)
-                    {
-                        tabelaEstacionamento[i, j] = 'L';
-                    }
+                    if (status == 1)                    
+                        tabelaEstacionamento[i, j] = 'O';                    
+                    if (status == 2)                    
+                        tabelaEstacionamento[i, j] = 'L';                    
                     Console.Write("{0} ", tabelaEstacionamento[i,j]);
                 }
-                Console.WriteLine("\n ");
+                Console.WriteLine("---------------------------------\n ");
             }
             Console.ReadKey();
         }

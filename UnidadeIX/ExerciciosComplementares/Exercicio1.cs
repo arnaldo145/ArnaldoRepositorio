@@ -16,7 +16,6 @@ namespace UnidadeIX.ExerciciosComplementares
         {
             Random gerador = new Random();
             int[] gabarito = new int[10];
-
             Console.WriteLine(" ===== GABARITO ===== ");
             for (int i = 0; i < gabarito.Length; i++)
             {
@@ -24,7 +23,6 @@ namespace UnidadeIX.ExerciciosComplementares
                 gabarito[i] = gerador.Next(1, 4);
                 Console.WriteLine("Questão {0}: {1}", (i+1), gabarito[i]);
             }
-
             Console.ReadKey();
         }
     }

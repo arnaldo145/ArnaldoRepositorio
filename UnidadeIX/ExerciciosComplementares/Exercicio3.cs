@@ -13,7 +13,6 @@ namespace UnidadeIX.ExerciciosComplementares
         static void Main3(string[] args)
         {
             Console.WriteLine(" ===== MENOR ELEMENTO =====\n");
-
             int[] valores = new int[7];
             Random gerador = new Random();
 
@@ -27,12 +26,9 @@ namespace UnidadeIX.ExerciciosComplementares
 
             for (int i = 0; i < valores.Length; i++)
             {
-                if (menorValor > valores[i])
-                {
-                    menorValor = valores[i];
-                }
+                if (menorValor > valores[i])                
+                    menorValor = valores[i];                
             }
-
             Console.WriteLine("\n \nMenor valor: {0}", menorValor);
             Console.ReadKey();
         }

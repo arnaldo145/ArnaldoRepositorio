@@ -22,8 +22,8 @@ namespace UnidadeIX.ExerciciosComplementares
 
             for (int i = 0; i < 50; i++)
             {
-                A[i] = gerador.Next(0, 100);
-                B[i] = gerador.Next(0, 100);
+                A[i] = gerador.Next(0, 200);
+                B[i] = gerador.Next(0, 200);
             }
 
             int bSize = 49;
