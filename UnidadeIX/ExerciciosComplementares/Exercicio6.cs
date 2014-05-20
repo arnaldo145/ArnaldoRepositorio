@@ -12,7 +12,7 @@ namespace UnidadeIX.ExerciciosComplementares
         //ano de 2004. Agora, está locadora está fazendo uma promoção e, para cada 10 filmes retirados, o cliente tem direito a uma 
         //locação grátis. Faça um algoritmo que crie um outro vetor contendo a quantidade de locações gratuitas a que cada cliente tem direito.
 
-        static void Main(string[] args)
+        static void Main6(string[] args)
         {
             Console.WriteLine(" ===== LOCADORA - PROMOÇÃO =====");
 
