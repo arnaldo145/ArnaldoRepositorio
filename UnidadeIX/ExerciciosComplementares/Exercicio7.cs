@@ -26,8 +26,7 @@ namespace UnidadeIX.ExerciciosComplementares
                 B[i] = gerador.Next(0, 200);
             }
 
-            int bSize = 49;
-            int count = 0;
+            int bSize = 49, count = 0;
 
             for (int i = 0; i < A.Length; i++)
             {
@@ -35,9 +34,7 @@ namespace UnidadeIX.ExerciciosComplementares
                 count += (A[i] - B[bSize]);
                 bSize--;
             }
-
             Console.WriteLine("\nSoma Final: {0}", count);
-
             Console.ReadKey();
         }
     }

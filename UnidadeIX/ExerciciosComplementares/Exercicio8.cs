@@ -19,7 +19,6 @@ namespace UnidadeIX.ExerciciosComplementares
             Random gerador = new Random();
 
             Console.WriteLine(" ===== GABARITO =====\n ");
-
             for (int i = 0; i < gabarito.Length; i++)
             {
                 gabarito[i] = gerador.Next(1, 4);
@@ -33,7 +32,6 @@ namespace UnidadeIX.ExerciciosComplementares
                 Console.WriteLine("\n ===== JOGADOR {0} ===== \n", (i + 1));
                 numeroCartao[i] = gerador.Next();
                 Console.WriteLine("Número do cartão: {0}", numeroCartao[i]);
-
                 int[] respostas = new int[13];
                 int countAcertos = 0;
 
@@ -47,8 +45,10 @@ namespace UnidadeIX.ExerciciosComplementares
                 }
                 Console.WriteLine("\nAcertos: {0}", countAcertos);
 
-                if (countAcertos == 13)                
+                if (countAcertos == 13)
                     Console.WriteLine("GANHADOR!");
+                else
+                    Console.WriteLine("Não ganhou!");
             }
             Console.ReadKey();
         }

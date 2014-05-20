@@ -15,7 +15,6 @@ namespace UnidadeIX.ExerciciosComplementares
         static void Main6(string[] args)
         {
             Console.WriteLine(" ===== LOCADORA - PROMOÇÃO =====");
-
             int[] qtdFilmesLocados = new int[50];
             int[] locacoesGratuitas = new int[50];
             Random gerador = new Random();
@@ -23,10 +22,9 @@ namespace UnidadeIX.ExerciciosComplementares
             for (int i = 0; i < qtdFilmesLocados.Length; i++)
             {
                 Console.WriteLine("\n ----- Cliente {0} -----", (i + 1));
-                int count = 0;
 
                 qtdFilmesLocados[i] = gerador.Next(0, 500);
-                int qtd = qtdFilmesLocados[i];
+                int count = 0, qtd = qtdFilmesLocados[i];
 
                 while(qtd >= 10){
                     qtd -= 10;
@@ -34,10 +32,8 @@ namespace UnidadeIX.ExerciciosComplementares
                 }
 
                 locacoesGratuitas[i] = count;
-
                 Console.WriteLine("Quantidade de filmes locados: {0} \nLocações Gratuitas: {1}\n", qtdFilmesLocados[i], locacoesGratuitas[i]);
             }
-
             Console.ReadKey();
         }
     }
