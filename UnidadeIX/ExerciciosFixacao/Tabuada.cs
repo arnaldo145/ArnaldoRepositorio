@@ -12,7 +12,7 @@ namespace ConsoleApplication1
         //Na pasta arrays, crie um arquivo chamado Tabuada.cs. Implemente um programa em C# que armazene números inteiros em um array
         //de arrays. Ao final, exiba no terminal esses valores.
 
-        static void Main(string[] args)
+        static void Maini(string[] args)
         {
             int[,] valores = new int[10, 10];
 
