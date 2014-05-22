@@ -11,7 +11,7 @@ namespace UnidadeX.ExerciciosFixacao
         //Na pasta funcoes-ou-metodos, crie um arquivo chamado JurosComposto.cs. Implemente um programa em C# definindo um método
         //que realize o cálculo do montante obtido com a aplicação de juros compostos.
 
-        public static void Main()
+        public static void Main2()
         {
             Console.WriteLine(" ===== CÁLCULO DE JURO COMPOSTOS =====\n");
             Console.Write("Informe o capital inicial: ");
