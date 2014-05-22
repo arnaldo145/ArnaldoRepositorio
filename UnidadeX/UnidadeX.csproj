@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExerciciosFixacao\ConsumoDeCombustivel.cs" />
+    <Compile Include="ExerciciosFixacao\JuroComposto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

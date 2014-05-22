@@ -23,20 +23,14 @@ namespace UnidadeIX.ExerciciosComplementares
             {
                 gabarito[i] = gerador.Next(1, 4);
 
-                if (gabarito[i] == 1)
-                {
-                    Console.WriteLine("Jogada {0}: {1} = (X - 0 - 0)", (i + 1), gabarito[i]);
-                }
+                if (gabarito[i] == 1)                
+                    Console.WriteLine("Jogada {0}: {1} = (X - 0 - 0)", (i + 1), gabarito[i]);                
 
-                if (gabarito[i] == 2)
-                {
-                    Console.WriteLine("Jogada {0}: {1} = (0 - 0 - X)", (i + 1), gabarito[i]);
-                }
+                if (gabarito[i] == 2)                
+                    Console.WriteLine("Jogada {0}: {1} = (0 - 0 - X)", (i + 1), gabarito[i]); 
 
                 if (gabarito[i] == 3)
-                {
                     Console.WriteLine("Jogada {0}: {1} = (0 - X - 0)", (i + 1), gabarito[i]);
-                }
             }
 
             int[] numeroCartao = new int[15];
@@ -55,19 +49,13 @@ namespace UnidadeIX.ExerciciosComplementares
                     respostas[j] = gerador.Next(1, 4);
 
                     if(respostas[j] == 1)
-                    {
                         Console.WriteLine("Jogada {0}: {1} = (X - 0 - 0)", (j + 1), respostas[j]);
-                    }
 
                     if (respostas[j] == 2)
-                    {
                         Console.WriteLine("Jogada {0}: {1} = (0 - 0 - X)", (j + 1), respostas[j]);
-                    }
 
                     if (respostas[j] == 3)
-                    {
                         Console.WriteLine("Jogada {0}: {1} = (0 - X - 0)", (j + 1), respostas[j]);
-                    }
 
                     if (respostas[j] == gabarito[j])                    
                         countAcertos++;                    
