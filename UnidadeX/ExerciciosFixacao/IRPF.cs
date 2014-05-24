@@ -11,7 +11,7 @@ namespace UnidadeX.ExerciciosFixacao
         //Na pasta funcoes-ou-metodos, crie um arquivo chamado IRPF.cs. Implemente um programa em C# definindo um método que
         //realize o cálculo do imposto de renda pessoa física.
 
-        public static void Main()
+        public static void Main3()
         {
             Console.WriteLine(" ===== IMPOSTO DE RENDA =====\n");
             Console.Write("Informe o rendimento (R$): ");
