@@ -11,7 +11,7 @@ namespace UnidadeX.ExerciciosFixacao
         //Na pasta funcoes-ou-metodos, crie um arquivo chamado IMC.cs. Implemente um programa
         //em C# definindo um método que realize o cálculo do índice de massa corporal e outro
         //que determina a situação da pessoa a partir desse índice.
-        public static void Main()
+        public static void Main1()
         {
             Console.WriteLine(" ===== IMC =====\n");
             Console.Write("Informe a altura: ");
