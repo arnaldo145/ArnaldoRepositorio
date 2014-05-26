@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="ExerciciosComplementares\Exercicio1_AnoBissexto.cs" />
     <Compile Include="ExerciciosComplementares\Exercicio2_DataValida.cs" />
+    <Compile Include="ExerciciosComplementares\Exercicio3_Idades.cs" />
+    <Compile Include="ExerciciosComplementares\Exercicio4_Tabuada.cs" />
     <Compile Include="ExerciciosFixacao\Array.cs" />
     <Compile Include="ExerciciosFixacao\ConsumoDeCombustivel.cs" />
     <Compile Include="ExerciciosFixacao\IMC.cs" />

@@ -12,7 +12,7 @@ namespace UnidadeX.ExerciciosComplementares
         //Outubro e Dezembro possuem 31 dias; Abril, Junho, Setembro e Novembro possuem 30 dias; e Fevereiro possui 28 dias em anos não 
         //bissextos e 29 dias em anos bissextos.
 
-        public static void Main()
+        public static void Main2()
         {
             Console.WriteLine(" ===== VERIFICAR DATA VÁLIDA =====");
             Console.Write("Informe o dia do mês (DD): ");
