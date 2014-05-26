@@ -21,18 +21,16 @@ namespace UnidadeX.ExerciciosComplementares
             int mes = int.Parse(Console.ReadLine());
             Console.Write("Informe o ano (AAAA): ");
             int ano = int.Parse(Console.ReadLine());
-            if(VerificarDataValida(dia, mes, ano) == true){
+            if(VerificarDataValida(dia, mes, ano) == true)
                 Console.WriteLine("\nData válida");
-            } else {
+            else 
                 Console.WriteLine("\nDatá inválida");
-            }
             Console.ReadKey();
         }
 
         static bool VerificarDataValida(int diaVerificar, int mesVerificar, int anoVerificar)
         {
             bool bissexto = VerificarAnoBissexto(anoVerificar);
-
             switch (mesVerificar)
             {
                 case 1:
@@ -41,46 +39,33 @@ namespace UnidadeX.ExerciciosComplementares
                 case 7:
                 case 9:
                 case 11:
-                    if(diaVerificar >= 1 && diaVerificar <= 31){
+                    if(diaVerificar >= 1 && diaVerificar <= 31)
                         return true;
-                    } else {
+                    else
                         return false;
-                    }
                 case 4:
                 case 6:
                 case 8:
                 case 10:
                 case 12:
                     if (diaVerificar >= 1 && diaVerificar <= 30)
-                    {
                         return true;
-                    }
                     else
-                    {
                         return false;
-                    }
                 case 2:
                     if (!bissexto)
                     {
                         if (diaVerificar >= 1 && diaVerificar <= 28)
-                        {
                             return true;
-                        }
                         else
-                        {
                             return false;
-                        }
                     }
                     else
                     {
-                        if (diaVerificar >= 1 && diaVerificar <= 29)
-                        {
-                            return true;
-                        }
-                        else
-                        {
-                            return false;                      
-                        }
+                        if (diaVerificar >= 1 && diaVerificar <= 29)                        
+                            return true;                        
+                        else                        
+                            return false;                   
                     }
                 default:
                     return false;
