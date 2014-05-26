@@ -40,9 +40,8 @@ namespace UnidadeX.ExerciciosFixacao
         {
             double valor = 0;
 
-            if(valorBase < 1787.77){
+            if(valorBase < 1787.77)
                 valor = 0;
-            }
 
             if (valorBase >= 1787.77 && valorBase < 2679.29)
             {
@@ -67,6 +66,7 @@ namespace UnidadeX.ExerciciosFixacao
                 valor = valorBase * (27.5 / 100);
                 valor -= 826.15;
             }
+
             return valor;
         }
     }

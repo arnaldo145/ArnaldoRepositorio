@@ -13,13 +13,12 @@ namespace UnidadeX.ExerciciosFixacao
         //terminal os valores armazenados em um array.
 
         static int[] Vetor = new int[100];
-        public static void Main()
+        public static void Main5()
         {
             Console.WriteLine(" ===== VALORES EM ARRAYS =====\n");
             PreencherArray();
             EscreverValoresArray();
-            Console.ReadKey();
-            
+            Console.ReadKey();            
         }
 
         static void PreencherArray()
@@ -28,10 +27,7 @@ namespace UnidadeX.ExerciciosFixacao
             for (int i = 0; i < Vetor.Length; i++)
             {
                 if (i % 10 == 0)
-                {
                     Console.Write(".");
-                }
-                Random gerador = new Random();
                 Vetor[i] = i;
             }
             Console.WriteLine("\nArray com todos valores preenchidos! \n");
@@ -39,12 +35,10 @@ namespace UnidadeX.ExerciciosFixacao
 
         static void EscreverValoresArray()
         {
-            Console.WriteLine("Escrever valores que estão no array: ");
-            for (int i = 0; i < Vetor.Length; i++)
-            {
-                Console.WriteLine(Vetor[i]);
-            }
-            Console.WriteLine("Valores do Array foram escritos! \n");
+            Console.WriteLine("\nEscrever valores que estão no array: ");
+            for (int i = 0; i < Vetor.Length; i++)            
+                Console.WriteLine(Vetor[i]);            
+            Console.WriteLine("\nValores do Array foram escritos! \n");
         }
     }
 }
