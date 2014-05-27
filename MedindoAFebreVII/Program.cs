@@ -33,6 +33,7 @@ namespace MedindoAFebreVII
             ListarTodos();
             CalcularPorcentagens();
             OrganizarIdades();
+            OrganizarMaisNovos();
             Console.ReadKey();
         }
 
@@ -200,8 +201,38 @@ namespace MedindoAFebreVII
             for (int i = 0; i < maisVelhos.Length; i++)
             {
                 Console.Write("{0} ", maisVelhos[i]);
+            }           
+        }
+
+        static void OrganizarMaisNovos()
+        {
+            int maisNovo = Idades[0];
+            int[] maisNovos = new int[5];
+            for (int i = 0; i < Idades.Length; i++)
+            {
+                if(maisNovo > Idades[i]){
+                    maisNovo = Idades[i];
+                }
             }
-           
+            maisNovos[0] = maisNovo;
+
+            for (int i = 1; i < maisNovos.Length; i++)
+            {
+                maisNovo = Idades[0];
+                for (int j = 0; j < Idades.Length; j++)
+                {
+                    if(Idades[j] < maisNovo && Idades[j] > maisNovos[i-1]){
+                        maisNovo = Idades[j];
+                    }
+                }
+                maisNovos[i] = maisNovo;
+            }
+
+            Console.Write("\nMais Novos: ");
+            for (int i = 0; i < maisNovos.Length; i++)
+            {
+                Console.Write("{0} ", maisNovos[i]);
+            }  
         }
     }
 }
