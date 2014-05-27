@@ -12,8 +12,8 @@ namespace MedindoAFebreVII
         //cada um. O algoritmo deve ter métodos ou funções para inicializar seus vetores com os dados, os valores de idade, altura, sexo
         //e se é adulto ou não, podem ser gerados aletoriamente.
 //- A porcentagem dos que são adultos e dos que não são;  ok
-//- A porcentagem do sexo masculino e feminino;ok
-//- A porcentagem dos mais altos que 1,70m;
+//- A porcentagem do sexo masculino e feminino; ok
+//- A porcentagem dos mais altos que 1,70m; ok
 //- Listar todos da seguinte maneira:  Nome: Thiago Sartor, Idade: 23, Sexo: ‘M’, Adulto: true ok
 //- Listar os 10 mais velhos;
 //- Listar os 5 mais novos;
@@ -32,6 +32,7 @@ namespace MedindoAFebreVII
             AtribuirValores();
             ListarTodos();
             CalcularPorcentagens();
+            OrganizarIdades();
             Console.ReadKey();
         }
 
@@ -116,7 +117,7 @@ namespace MedindoAFebreVII
 
             for (int i = 0; i < 50; i++)
             {                
-                Console.Write("\nNome: {0} - Idade: {1} - Sexo: '{2}' - Adulto: {3}", Nomes[i], Idades[i], Sexo[i], IsAdulto[i]);                
+                Console.Write("Nome: {0} - Idade: {1} - Sexo: '{2}' - Adulto: {3} - Altura: {4:F2}\n", Nomes[i], Idades[i], Sexo[i], IsAdulto[i], Altura[i]);                
 
                 if (maiorAltura < Altura[i])                
                     maiorAltura = Altura[i];                
@@ -167,6 +168,40 @@ namespace MedindoAFebreVII
             Console.WriteLine("Adultos: {0}% - Menores de Idade: {1}%", porcentagemAdultos, porcentagemMenores);
             Console.WriteLine("Sexo Masculino: {0}% - Sexo Feminino: {1}%", porcentagemMasculino, porcentagemFeminino);
             Console.WriteLine("Maiores de 1.70 metros: {0}%", porcentagemPessoasAltas);
+        }
+
+        static void OrganizarIdades()
+        {
+            int maisVelho = 0;
+
+            for (int i = 0; i < Idades.Length; i++)
+            {
+                if (maisVelho < Idades[i])
+                {
+                    maisVelho = Idades[i];
+                }
+            }
+            int[] maisVelhos = new int[10];
+            maisVelhos[0] = maisVelho;
+
+            for (int i = 1; i < maisVelhos.Length; i++)
+            {
+                maisVelho = 0;
+                for (int j = 0; j < Idades.Length; j++)
+                {
+                    if(Idades[j] > maisVelho && Idades[j] < maisVelhos[i-1]){
+                        maisVelho = Idades[j];
+                    }
+                }
+                maisVelhos[i] = maisVelho;
+            }
+
+            Console.Write("Mais Velhos: ");
+            for (int i = 0; i < maisVelhos.Length; i++)
+            {
+                Console.Write("{0} ", maisVelhos[i]);
+            }
+           
         }
     }
 }
