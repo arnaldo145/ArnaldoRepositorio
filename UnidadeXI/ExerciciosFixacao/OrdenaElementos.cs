@@ -14,20 +14,19 @@ namespace UnidadeXI.ExerciciosFixacao
         {
             int[] valores = new int[50];
             Random geraNum = new Random();
-
             Console.WriteLine(" ===== DESORDENADO =====");
+
             for (int i = 0; i < valores.Length; i++)
             {
-                valores[i] = geraNum.Next(0, 30);
+                valores[i] = geraNum.Next(0, 300);
                 Console.Write("{0} ", valores[i]);                
             }
-            Console.WriteLine(" ");
 
+            Console.WriteLine(" ");
             OrdenarCrescente(valores);
             Console.WriteLine("\n ===== ORDENADO =====");
             for (int i = 0; i < valores.Length; i++)            
                 Console.Write("{0} ", valores[i]);
-
             Console.WriteLine("\n \nENTER para sair: ");
             Console.ReadKey();
         }
