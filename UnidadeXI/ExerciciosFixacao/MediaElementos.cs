@@ -26,8 +26,7 @@ namespace UnidadeXI.ExerciciosFixacao
                 soma += valores[i];            
 
             double media = soma / valores.Length;
-            Console.WriteLine("\nMédia dos valores: {0}", media);
-            Console.WriteLine("ENTER para sair: ");
+            Console.WriteLine("\nMédia dos valores: {0} \nENTER para sair: ", media);
             Console.ReadKey();
         }
     }

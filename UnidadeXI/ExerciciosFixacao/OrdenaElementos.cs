@@ -14,6 +14,7 @@ namespace UnidadeXI.ExerciciosFixacao
         {
             int[] valores = new int[50];
             Random geraNum = new Random();
+
             Console.WriteLine(" ===== DESORDENADO =====");
             for (int i = 0; i < valores.Length; i++)
             {
@@ -21,23 +22,24 @@ namespace UnidadeXI.ExerciciosFixacao
                 Console.Write("{0} ", valores[i]);                
             }
             Console.WriteLine(" ");
-            Ordenar(valores);
+
+            OrdenarCrescente(valores);
             Console.WriteLine("\n ===== ORDENADO =====");
             for (int i = 0; i < valores.Length; i++)            
                 Console.Write("{0} ", valores[i]);
-            Console.WriteLine(" ");
-            Console.WriteLine("\nENTER para sair: ");
+
+            Console.WriteLine("\n \nENTER para sair: ");
             Console.ReadKey();
         }
 
-        public static void Troca(int[] array, int i, int j)
+        public static void TrocaValores(int[] array, int i, int j)
         {
-            int auxiliar = array[i];
+            int aux = array[i];
             array[i] = array[j];
-            array[j] = auxiliar;
+            array[j] = aux;
         }
 
-        public static int Menor(int[] array, int inicio)
+        public static int EncontrarMenor(int[] array, int inicio)
         {
             int menor = inicio;
             for (int i = inicio + 1; i < array.Length; i++)
@@ -48,10 +50,10 @@ namespace UnidadeXI.ExerciciosFixacao
             return menor;
         }
 
-        public static void Ordenar(int[] array)
+        public static void OrdenarCrescente(int[] array)
         {
             for (int i = 0; i < array.Length; i++)            
-                Troca(array, i, Menor(array, i));            
+                TrocaValores(array, i, EncontrarMenor(array, i));            
         }
     }
 }

@@ -23,10 +23,9 @@ namespace UnidadeXI.ExerciciosFixacao
             }
 
             for (int i = 0; i < valores.Length; i++)            
-                soma += valores[i];            
+                soma += valores[i];
 
-            Console.WriteLine("\nSOMA: {0}", soma);
-            Console.WriteLine("ENTER para sair: ");
+            Console.WriteLine("\nSOMA: {0}\nENTER para sair: ", soma);
             Console.ReadKey();
         }
     }

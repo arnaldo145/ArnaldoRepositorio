@@ -35,8 +35,7 @@ namespace UnidadeXI.ExerciciosFixacao
                     posicaoMenor = i;
             }
 
-            Console.WriteLine("\nMaior valor: {0}", valores[posicaoMaior]);
-            Console.WriteLine("Menor valor: {0}", valores[posicaoMenor]);
+            Console.WriteLine("\nMaior valor: {0} \nMenor valor: {0}\n", valores[posicaoMaior], valores[posicaoMenor]);
             Console.WriteLine("ENTER para sair: ");
             Console.ReadKey();
         }
