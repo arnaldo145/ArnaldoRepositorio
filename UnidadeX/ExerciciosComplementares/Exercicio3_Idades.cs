@@ -39,9 +39,8 @@ namespace UnidadeX.ExerciciosComplementares
             int maiorIdade = 0;
             for (int i = 0; i < Idades.Length; i++)
             {
-                if(Idades[i] > maiorIdade){
+                if (Idades[i] > maiorIdade)
                     maiorIdade = Idades[i];
-                }
             }
             Console.WriteLine("Maior idade é {0} anos", maiorIdade);
         }
@@ -53,9 +52,7 @@ namespace UnidadeX.ExerciciosComplementares
             for (int i = 0; i < Idades.Length; i++)
             {
                 if (Idades[i] < menorIdade)
-                {
                     menorIdade = Idades[i];
-                }
             }
             Console.WriteLine("Menor idade é {0} anos", menorIdade);
         }
@@ -64,10 +61,8 @@ namespace UnidadeX.ExerciciosComplementares
         {
             Console.WriteLine("\nMENSAGEM: Calculando a média de idades");
             int count = 0;
-            for (int i = 0; i < Idades.Length; i++)
-            {
-                count += Idades[i];
-            }
+            for (int i = 0; i < Idades.Length; i++)            
+                count += Idades[i];            
             double media = count / Idades.Length;
             Console.WriteLine("Média de idade: {0:F1} anos", media);
         }
