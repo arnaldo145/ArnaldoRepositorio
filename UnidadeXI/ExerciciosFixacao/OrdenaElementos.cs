@@ -10,7 +10,7 @@ namespace UnidadeXI.ExerciciosFixacao
     class OrdenaElementos
     {
         //Na pasta problemas, crie um arquivo chamado OrdenarElementos.cs. Implemente um programa em C#.
-        public static void Main()
+        public static void Main5()
         {
             int[] valores = new int[50];
             Random geraNum = new Random();
