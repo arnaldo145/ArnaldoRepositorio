@@ -35,15 +35,14 @@ namespace UnidadeXI.ExerciciosComplementares
                 {
                     valoresApostados[i] = int.Parse(Console.ReadLine());
                     if (valoresApostados[i] <= 0 || valoresApostados[i] > 60)
-                        Console.Write("Valor inválido! Informe outro valor:");
+                        Console.Write("Valor inválido! Informe outro valor: ");
                 } while (valoresApostados[i] <= 0 || valoresApostados[i] > 60);
             }
 
             Console.WriteLine("\n ===== SORTEIO =====");
             for (int i = 0; i < valoresSorteados.Length; i++)            
                 valoresSorteados[i] = gerador.Next(1, 61);
-            OrdenarValores(valoresSorteados);
-            
+            OrdenarValores(valoresSorteados);            
             ResultadoJogada(VerificarAposta(valoresApostados, valoresSorteados));
             Console.Write("\nENTER para sair: ");
             Console.ReadKey();
@@ -53,7 +52,6 @@ namespace UnidadeXI.ExerciciosComplementares
         {
             for (int i = 0; i < sorteados.Length; i++)
                 TrocaValores(sorteados, i, EncontrarMenor(sorteados, i));
-
             for (int i = 0; i < sorteados.Length; i++)            
                 Console.Write("{0} ", sorteados[i]);            
         }
@@ -107,10 +105,10 @@ namespace UnidadeXI.ExerciciosComplementares
                     Console.WriteLine("Nossa! Você não acertou nenhum número!");
                     break;
                 case 5:
-                    Console.WriteLine("Parabéns! Você acertou a quina");
+                    Console.WriteLine("Parabéns! Você acertou a quina!");
                     break;
                 case 6:
-                    Console.WriteLine("Que sorte! Você ganhou a mega sena");
+                    Console.WriteLine("Que sorte! Você ganhou a mega sena!");
                     break;
             }
         }
