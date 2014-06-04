@@ -45,7 +45,6 @@ namespace UnidadeXI.ExerciciosComplementares
             OrdenarValores(valoresSorteados);
             
             ResultadoJogada(VerificarAposta(valoresApostados, valoresSorteados));
-
             Console.Write("\nENTER para sair: ");
             Console.ReadKey();
         }
@@ -55,10 +54,8 @@ namespace UnidadeXI.ExerciciosComplementares
             for (int i = 0; i < sorteados.Length; i++)
                 TrocaValores(sorteados, i, EncontrarMenor(sorteados, i));
 
-            for (int i = 0; i < sorteados.Length; i++)
-            {
-                Console.Write("{0} ", sorteados[i]);
-            }
+            for (int i = 0; i < sorteados.Length; i++)            
+                Console.Write("{0} ", sorteados[i]);            
         }
 
         public static void TrocaValores(int[] array, int i, int j)
