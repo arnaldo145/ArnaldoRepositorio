@@ -33,9 +33,10 @@ namespace UnidadeXI.ExerciciosComplementares
                     if (valoresApostados[i] <= 0 || valoresApostados[i] > 60)
                         Console.Write("Valor inválido! Informe outro valor: ");
                 } while (valoresApostados[i] <= 0 || valoresApostados[i] > 60);
+                Console.WriteLine("--------------------------------------------");
             }
 
-            Console.WriteLine("\n ===== SORTEIO =====");
+            Console.WriteLine("\n ===== SORTEIO ===== \n");
             for (int i = 0; i < valoresSorteados.Length; i++)            
                 valoresSorteados[i] = gerador.Next(1, 61);
             OrdenarValores(valoresSorteados);            
