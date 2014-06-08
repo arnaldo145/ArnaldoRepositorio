@@ -1,0 +1,92 @@
+﻿1) CREATE TABLE [dbo].[Aluno] (
+    [Id]       INT            IDENTITY (1, 1) NOT NULL,
+    [Nome]     VARCHAR (255)  NOT NULL,
+    [Email]    VARCHAR (255)  NOT NULL,
+    [Telefone] VARCHAR (255)  NOT NULL,
+    [Altura]   DECIMAL (3, 2) NULL,
+    [Aprovado] TINYINT        NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+2) insert Aluno(Nome, Email, Telefone, Altura, Aprovado) values('Arnaldo Madeira', 'arnaldo@gmail.com', '99123456', 1.74, 0);
+insert Aluno(Nome, Email, Telefone, Altura, Aprovado) values('Guilherme Toniello', 'guilherme@gmail.com', '99133456', 1.73, 1);
+insert Aluno(Nome, Email, Telefone, Altura, Aprovado) values('Lucas Muniz', 'lucas@gmail.com', '92123456', 1.72, 0);
+insert Aluno(Nome, Email, Telefone, Altura, Aprovado) values('Lucas Siqueira', 'arnaldo@gmail.com', '99123456', 1.73, 0);
+insert Aluno(Nome, Email, Telefone, Altura, Aprovado) values('Giorgi', 'giorgi@gmail.com', '99123456', 1.75, 0);
+insert Aluno(Nome, Email, Telefone, Altura, Aprovado) values('Greyce', 'greyce@gmail.com', '99123456', 1.76, 0);
+insert Aluno(Nome, Email, Telefone, Altura, Aprovado) values('Camila', 'camila@gmail.com', '99123456', 1.72, 0);
+insert Aluno(Nome, Email, Telefone, Altura, Aprovado) values('Rafael', 'rafael@gmail.com', '99123456', 1.80, 1);
+insert Aluno(Nome, Email, Telefone, Altura, Aprovado) values('Thiago', 'thiagoo@gmail.com', '99123456', 1.75, 1);
+
+3) 
+//Localiza quem tem altura igual a 1.80
+SELECT * FROM Aluno WHERE Altura = 1.8;
+//Localiza quem tem altura diferente a 1.80
+SELECT * FROM Aluno WHERE Altura != 1.8;
+//Localiza quem tem altura igual ou menor a 1.80
+SELECT * FROM Aluno WHERE Altura <= 1.8;
+//Localiza quem tem altura menor a 1.80
+SELECT * FROM Aluno WHERE Altura < 1.8;
+//Localiza quem tem altura maior ou igual a 1.80
+SELECT * FROM Aluno WHERE Altura >= 1.8;
+//Localiza quem tem altura maior a 1.80
+SELECT * FROM Aluno WHERE Altura > 1.8;
+//Localiza o aluno que tem nome vazio
+SELECT * FROM Aluno WHERE Nome IS NULL ;
+//Localiza aluno que ten nome diferente de vazio
+SELECT * FROM Aluno WHERE Nome IS NOT NULL ;
+//Localiza alunos que tem altura entre 1.5 e 1.8
+SELECT * FROM Aluno WHERE Altura BETWEEN 1.5 AND 1.8;
+//Localiza alunos que nao tem altura entre 1.5 e 1.8
+SELECT * FROM Aluno WHERE Altura NOT BETWEEN 1.5 AND 1.8;
+//Localiza alunos que nome começa com rafael
+SELECT * FROM Aluno WHERE Nome LIKE ’Rafael %’;
+//Localiza alunos que nome nao começa com rafael
+SELECT * FROM Aluno WHERE Nome NOT LIKE ’Rafael %’;
+//Localiza alunos que tem uma dessas alturas
+SELECT * FROM Aluno WHERE Altura IN (1.5 , 1.6 , 1.7 , 1.8) ;
+//Localiza alunos que não tem uma dessas alturas
+SELECT * FROM Aluno WHERE Altura NOT IN (1.5 , 1.6 , 1.7 , 1.8) ;
+//Localiza alunos que não tem essa altura
+SELECT * FROM Aluno WHERE NOT Altura = 1.80;
+//Localiza aluno que tem altura menor que 1.8 e determinado nome
+SELECT * FROM Aluno WHERE Altura < 1.8 AND Nome LIKE ’Nome ’;
+//Localiza aluno que tem altura menor que 1.8 ou determinado nome começa com valor informado
+SELECT * FROM Aluno WHERE Altura < 1.8 OR Nome LIKE ‘Nome%’;
+
+4) select * from aluno order by Aprovado desc;
+
+5) Select * from Aluno where Aprovado = 1 order by Email, Altura desc, Nome;
+
+6) Select SUM(Altura) from Aluno where Aprovado = 0;
+Select Count(*) from Aluno;
+Select Count(*) from Aluno where Aprovado = 1;
+Select Max(Altura) from Aluno;
+Select Min(Altura) from Aluno;
+
+7) CREATE TABLE [dbo].[Livro]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Titulo] VARCHAR(255) NULL, 
+    [Autor] VARCHAR(255) NULL
+)
+
+8) INSERT Livro(Titulo, Autor) VALUES ('A Culpa é Das Estrelas', 'John Green');
+INSERT Livro(Titulo, Autor) VALUES ('A Culpa é Das Estrelas', 'John Green');
+INSERT Livro(Titulo, Autor) VALUES ('A Culpa é Das Estrelas', 'John Green');
+Select * from Livro;
+
+9) DELETE Livro;
+ALTER TABLE Livro ADD CONSTRAINT UQTitulo UNIQUE (Titulo);
+ALTER TABLE Livro ADD CONSTRAINT UQAutor UNIQUE (Autor)
+INSERT Livro(Titulo, Autor) VALUES ('A Culpa é Das Estrelas', 'John Green');
+INSERT Livro(Titulo, Autor) VALUES ('A Culpa é Das Estrelas', 'John Green');
+INSERT Livro(Titulo, Autor) VALUES ('A Culpa é Das Estrelas', 'John Green');
+Select * from Livro;
+
+10)INSERT Livro(Titulo, Autor) VALUES ('Crepusculo', 'Stephenie Meyer');
+Select * from Livro;
+UPDATE Livro set Titulo = 'Lua Nova' where Autor Like 'Stephenie%';
+Select * from Livro;
+DELETE Livro where Titulo LIKE 'Lua Nova';
+Select * from Livro;
