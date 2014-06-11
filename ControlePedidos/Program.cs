@@ -12,9 +12,11 @@ namespace ControlePedidos
     {
         public static string ConnectionString, Nome, Sobrenome, Cidade, Estado, Cep, Cpf, Telefone;
         public static SqlCommand command;
+        public static int Codigo;
 
         static void Main(string[] args)
         {
+            
             ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\aluno\Source\Repos\ArnaldoRepositorio\ControlePedidos\ArnaldoDB.mdf;Integrated Security=True";
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
             sqlConnection.Open();
@@ -76,6 +78,7 @@ namespace ControlePedidos
                             Console.WriteLine("CEP: {0}\nCPF: {1} \nTelefone: {2}", reader["CEP"], reader["CPF"], reader["Telefone"]);
                             Console.WriteLine("---------- ----------");
                         }
+                        reader.Close();
                         Console.WriteLine("\nPressione ENTER: ");
                         Console.ReadKey();
                         break;
@@ -84,7 +87,7 @@ namespace ControlePedidos
                         Console.WriteLine(" ===== EDITAR =====\n");
 
                         Console.Write("Informe o código: ");
-                        int codigo = int.Parse(Console.ReadLine());
+                        Codigo = int.Parse(Console.ReadLine());
                          Console.Write("Informe o primeiro nome: ");
                         Nome = Console.ReadLine();
                         Console.Write("Informe o sobrenome: ");
@@ -100,7 +103,7 @@ namespace ControlePedidos
                         Console.Write("Informe o telefone: ");
                         Telefone = Console.ReadLine();
 
-                        string updateCliente = String.Format("UPDATE Cliente SET PrimeiroNome = '{0}', Sobrenome = '{1}', Cidade = '{2}', Estado = '{3}', CEP = '{4}', CPF = '{5}', Telefone = '{6}' WHERE Id = {7}", Nome, Sobrenome, Cidade, Estado, Cep, Cpf, Telefone, codigo);
+                        string updateCliente = String.Format("UPDATE Cliente SET PrimeiroNome = '{0}', Sobrenome = '{1}', Cidade = '{2}', Estado = '{3}', CEP = '{4}', CPF = '{5}', Telefone = '{6}' WHERE Id = {7}", Nome, Sobrenome, Cidade, Estado, Cep, Cpf, Telefone, Codigo);
                         command = new SqlCommand(updateCliente, sqlConnection);
                         try
                         {
@@ -114,16 +117,33 @@ namespace ControlePedidos
                         {
                             Console.Write("\nERRO: {0}\n", e.Message.ToString());
                         }
-
+                        command.Dispose();
                         Console.WriteLine("\nPressione ENTER: ");
                         Console.ReadKey();
                         break;
                     case 4:
                         Console.Clear();
                         Console.WriteLine(" ===== EXCLUIR =====\n");
+                        Console.Write("Informe o código: ");
+                        Codigo = int.Parse(Console.ReadLine());
+                        string removeCliente = String.Format("DELETE FROM Cliente WHERE Id = {0}", Codigo);
+                        command = new SqlCommand(removeCliente, sqlConnection);
+                        
+                        try
+                        {
+                            int i = command.ExecuteNonQuery();
+                            if (i > 0)
+                                Console.WriteLine("\nSUCESSO! Cliente removido do sistema\n");
+                            else
+                                Console.WriteLine("\nATENÇÃO: Cliente não foi removido do sistema\n");
+                        }
+                        catch (SqlException e)
+                        {
+                            Console.Write("\nERRO: {0}\n", e.Message.ToString());
+                        }
+                        command.Dispose();
                         Console.WriteLine("\nPressione ENTER: ");
                         Console.ReadKey();
-
                         break;
                     case 5:                        
                         Console.Clear();
