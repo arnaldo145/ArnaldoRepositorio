@@ -11,7 +11,7 @@ namespace Pedido
     class Program
     {
         public static string ConnectionString;
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\aluno\Source\Repos\ArnaldoRepositorio\UnidadeXII\ArnaldoDB.mdf;Integrated Security=True";
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
