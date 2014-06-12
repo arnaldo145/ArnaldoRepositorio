@@ -88,7 +88,7 @@ namespace ControlePedidos
                         Console.Write("Informe o valor: ");
                         valor = Console.ReadLine();
                         Valor = Decimal.Parse(valor.Replace(",", "."));
-                        string updateProduto = String.Format("UPDATE Produto SET Nome = ?, Unidade = ?, Valor = ? WHERE Id = ?", Nome, Unidade, Valor, Codigo);
+                        string updateProduto = String.Format("UPDATE Produto SET Nome = '{0}', Unidade = '{1}', Valor = {2} WHERE Id = {3}", Nome, Unidade, Valor, Codigo);
                         command = new SqlCommand(updateProduto, sqlConnection);
                         try
                         {
