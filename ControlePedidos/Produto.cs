@@ -18,7 +18,7 @@ namespace ControlePedidos
 
         static void Main(string[] args)
         {
-            ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\arnal_000\Source\Repos\ArnaldoRepositorio\ControlePedidos\ArnaldoDB.mdf;Integrated Security=True";
+            ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\aluno\Source\Repos\ArnaldoRepositorio\ControlePedidos\ArnaldoDB.mdf;Integrated Security=True";
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
             sqlConnection.Open();
 
@@ -39,7 +39,7 @@ namespace ControlePedidos
                         Unidade = Console.ReadLine();
                         Console.Write("Informe o valor: ");
                         String valor = Console.ReadLine();
-                        Valor = Decimal.Parse(valor.Replace(",", "."));
+                        Valor = Decimal.Parse(valor.Replace(',', '.'));
                         string insertProduto = String.Format("INSERT Produto(Nome, Unidade, Valor) VALUES('{0}','{1}','{2}')", Nome, Unidade, Valor);
                         command = new SqlCommand(insertProduto, sqlConnection);
 
@@ -126,6 +126,7 @@ namespace ControlePedidos
                         {
                             Console.Write("\nERRO: {0}\n", e.Message.ToString());
                         }
+
                         command.Dispose();
                         Console.WriteLine("\nPressione ENTER para continuar: ");
                         Console.ReadKey();

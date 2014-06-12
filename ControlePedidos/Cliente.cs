@@ -17,7 +17,7 @@ namespace ControlePedidos
         static void Main1(string[] args)
         {
 
-            ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\arnal_000\Source\Repos\ArnaldoRepositorio\ControlePedidos\ArnaldoDB.mdf;Integrated Security=True";
+            ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\aluno\Source\Repos\ArnaldoRepositorio\ControlePedidos\ArnaldoDB.mdf;Integrated Security=True";
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);            
             sqlConnection.Open();
             int opcao = 0;
