@@ -28,25 +28,27 @@ namespace ControlePedidos
                 {
                     default:
                         Console.Clear();
-                        Console.WriteLine(" ----- ATENÇÃO ----- \nOpção informada é inválida! Verifique as opções e escolha uma opção válida!\nENTER para sair: ");
+                        Console.WriteLine(" ----- ATENÇÃO ----- \n \nOpção informada é inválida! Verifique as opções e escolha uma opção válida!\nENTER para sair: ");
                         Console.ReadKey();
                         break;
+
                     case 5:
                         Console.Clear();
-                        Console.WriteLine(" ----- SAINDO ----- \nVocê está saindo do programa!\n \nAté Logo!\n \nENTER para sair: ");
+                        Console.WriteLine(" ----- SAINDO ----- \n \nVocê está saindo do programa!\n \nAté Logo!\n \nENTER para sair: ");
                         Console.ReadKey();
                         break;
+
                     case 1:
                         Console.Clear();
-                        Console.WriteLine(" ----- CADASTRO DE PEDIDOS ----- ");
+                        Console.WriteLine(" ----- CADASTRO DE PEDIDOS ----- \n");
                         Console.Write("Informe a quantidade do produto: ");
                         Quantidade = int.Parse(Console.ReadLine());
                         Console.Write("Informe o código do produto: ");
-                        IdCliente = int.Parse(Console.ReadLine());
-                        Console.Write("Informe o código do cliente: ");
                         IdProduto = int.Parse(Console.ReadLine());
-                        DataAbertura = DateTime.Now.ToString();
-                        string insertPedido = String.Format("INSERT Pedido(Cliente_Id, Produto_Id, DataPedido, Quantidade) VALUES({0}, {1}, '{2}', {3})", IdCliente, IdProduto, DataAbertura, Quantidade);
+                        Console.Write("Informe o código do cliente: ");
+                        IdCliente = int.Parse(Console.ReadLine());
+                        DataAbertura = DateTime.Now.ToShortDateString();
+                        string insertPedido = String.Format("@INSERT Pedido(Cliente_Id, Produto_Id, DataPedido, Quantidade) VALUES({0}, {1}, '{2}', {3})", IdCliente, IdProduto, DataAbertura, Quantidade);
                         command = new SqlCommand(insertPedido, sqlConnection);
 
                         try
@@ -61,6 +63,75 @@ namespace ControlePedidos
                         {
                             Console.Write("\nERRO: {0}\n", e.Message.ToString());
                         }
+                        command.Dispose();
+                        Console.WriteLine("\nPressione ENTER para continuar: ");
+                        Console.ReadKey();
+                        break;
+
+                    case 3:
+                        Console.Clear();
+                        Console.WriteLine(" ----- EDITAR PEDIDOS ----- \n");
+                        Console.Write("Informe o código do pedido: ");
+                        Codigo = int.Parse(Console.ReadLine());
+                        Console.Write("Informe a quantidade do produto: ");
+                        Quantidade = int.Parse(Console.ReadLine());
+                        Console.Write("Informe o código do produto: ");
+                        IdProduto = int.Parse(Console.ReadLine());
+                        Console.Write("Informe o código do cliente: ");
+                        IdCliente = int.Parse(Console.ReadLine());
+                        string updatePedido = String.Format("@UPDATE Pedido SET Cliente_Id = {0}, Produto_Id = {1}, Quantidade = {2}, DataPedido = '{3}' WHERE Id = {4}", IdCliente, IdProduto, Quantidade, DateTime.Now.ToShortTimeString(), Codigo);
+                        command = new SqlCommand(updatePedido, sqlConnection);
+                        try
+                        {
+                            int i = command.ExecuteNonQuery();
+                            if (i > 0)
+                                Console.WriteLine("\nSUCESSO! Pedido foi ATUALIZADO no sistema\n");
+                            else
+                                Console.WriteLine("\nATENÇÃO:Pedido NÃO ATUALIZADO no sistema\n");
+                        }
+                        catch (SqlException e)
+                        {
+                            Console.Write("\nERRO: {0}\n", e.Message.ToString());
+                        }
+                        command.Dispose();
+                        Console.WriteLine("\nPressione ENTER para continuar: ");
+                        Console.ReadKey();
+                        break;
+
+                    case 4:
+                        Console.Clear();
+                        Console.WriteLine(" ----- EXCLUIR PEDIDOS ----- \n");
+                        Console.Write("Informe o código do pedido: ");
+                        Codigo = int.Parse(Console.ReadLine());
+                        string removePedido = String.Format("@REMOVE Pedido WHERE Id = {0}", Codigo);
+                        try
+                        {
+                            int i = command.ExecuteNonQuery();
+                            if (i > 0)
+                                Console.WriteLine("\nSUCESSO! Pedido foi REMOVIDO no sistema\n");
+                            else
+                                Console.WriteLine("\nATENÇÃO:Pedido NÃO REMOVIDO no sistema\n");
+                        }
+                        catch (SqlException e)
+                        {
+                            Console.Write("\nERRO: {0}\n", e.Message.ToString());
+                        }
+                        command.Dispose();
+                        Console.WriteLine("\nPressione ENTER para continuar: ");
+                        Console.ReadKey();
+                        break;
+
+                    case 2:
+                        Console.Clear();
+                        Console.WriteLine(" ----- LISTAR PEDIDOS ----- \n");
+                        string listarPedidos = @"SELECT * FROM Pedido AS p INNER JOIN Cliente as c ON c.Id = p.Cliente_Id INNER JOIN Produto AS prod ON prod.Id = p.Produto_Id";
+                        command = new SqlCommand(listarPedidos, sqlConnection);
+                        SqlDataReader reader = command.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            Console.WriteLine(reader["Id"]);
+                        }
+                        reader.Close();
                         command.Dispose();
                         Console.WriteLine("\nPressione ENTER para continuar: ");
                         Console.ReadKey();
