@@ -16,7 +16,7 @@ namespace ControlePedidos
         public static String Nome, Unidade;
         public static decimal Valor;
 
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\aluno\Source\Repos\ArnaldoRepositorio\ControlePedidos\ArnaldoDB.mdf;Integrated Security=True";
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
