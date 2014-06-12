@@ -16,10 +16,9 @@ namespace ControlePedidos
 
         static void Main(string[] args)
         {
-            ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\aluno\Source\Repos\ArnaldoRepositorio\ControlePedidos\ArnaldoDB.mdf;Integrated Security=True";
+            ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\arnal_000\Source\Repos\ArnaldoRepositorio\ControlePedidos\ArnaldoDB.mdf;Integrated Security=True";
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
             sqlConnection.Open();
-
             do
             {
                 Console.Clear();
@@ -48,7 +47,7 @@ namespace ControlePedidos
                         Console.Write("Informe o código do cliente: ");
                         IdCliente = int.Parse(Console.ReadLine());
                         DataAbertura = DateTime.Now.ToShortDateString();
-                        string insertPedido = String.Format("@INSERT Pedido(Cliente_Id, Produto_Id, DataPedido, Quantidade) VALUES({0}, {1}, '{2}', {3})", IdCliente, IdProduto, DataAbertura, Quantidade);
+                        string insertPedido = String.Format(@"INSERT Pedido(Cliente_Id, Produto_Id, DataPedido, Quantidade) VALUES({0}, {1}, '{2}', {3})", IdCliente, IdProduto, DataAbertura, Quantidade);
                         command = new SqlCommand(insertPedido, sqlConnection);
 
                         try
@@ -79,7 +78,7 @@ namespace ControlePedidos
                         IdProduto = int.Parse(Console.ReadLine());
                         Console.Write("Informe o código do cliente: ");
                         IdCliente = int.Parse(Console.ReadLine());
-                        string updatePedido = String.Format("@UPDATE Pedido SET Cliente_Id = {0}, Produto_Id = {1}, Quantidade = {2}, DataPedido = '{3}' WHERE Id = {4}", IdCliente, IdProduto, Quantidade, DateTime.Now.ToShortTimeString(), Codigo);
+                        string updatePedido = String.Format(@"UPDATE Pedido SET Cliente_Id = {0}, Produto_Id = {1}, Quantidade = {2}, DataPedido = '{3}' WHERE Id = {4}", IdCliente, IdProduto, Quantidade, DateTime.Now.ToShortTimeString(), Codigo);
                         command = new SqlCommand(updatePedido, sqlConnection);
                         try
                         {
@@ -103,7 +102,7 @@ namespace ControlePedidos
                         Console.WriteLine(" ----- EXCLUIR PEDIDOS ----- \n");
                         Console.Write("Informe o código do pedido: ");
                         Codigo = int.Parse(Console.ReadLine());
-                        string removePedido = String.Format("@REMOVE Pedido WHERE Id = {0}", Codigo);
+                        string removePedido = String.Format(@"REMOVE Pedido WHERE Id = {0}", Codigo);
                         try
                         {
                             int i = command.ExecuteNonQuery();
@@ -129,7 +128,12 @@ namespace ControlePedidos
                         SqlDataReader reader = command.ExecuteReader();
                         while (reader.Read())
                         {
-                            Console.WriteLine(reader["Id"]);
+                            Console.WriteLine("Código: {0}", reader["Id"]);
+                            Console.WriteLine("Cliente: {0}", reader["PrimeiroNome"]);
+                            Console.WriteLine("Produto: {0}", reader["Nome"]);
+                            Console.WriteLine("Quantidade: {0}", reader["Quantidade"]);
+                            Console.WriteLine("---------- ----------");
+
                         }
                         reader.Close();
                         command.Dispose();
