@@ -8,17 +8,17 @@ using System.Data.SqlClient;
 
 namespace ControlePedidos
 {
-    class Program
+    class Cliente
     {
         public static string ConnectionString, Nome, Sobrenome, Cidade, Estado, Cep, Cpf, Telefone;
         public static SqlCommand command;
         public static int Codigo;
 
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
-            
-            ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\aluno\Source\Repos\ArnaldoRepositorio\ControlePedidos\ArnaldoDB.mdf;Integrated Security=True";
-            SqlConnection sqlConnection = new SqlConnection(ConnectionString);
+
+            ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\arnal_000\Source\Repos\ArnaldoRepositorio\ControlePedidos\ArnaldoDB.mdf;Integrated Security=True";
+            SqlConnection sqlConnection = new SqlConnection(ConnectionString);            
             sqlConnection.Open();
             int opcao = 0;
 
@@ -62,7 +62,7 @@ namespace ControlePedidos
                         {
                             Console.Write("\nERRO: {0}\n", e.Message.ToString());
                         }
-
+                        command.Dispose();
                         Console.WriteLine("\nPressione ENTER: ");
                         Console.ReadKey();
                         break;
@@ -161,7 +161,6 @@ namespace ControlePedidos
             } while (opcao != 5);
 
             sqlConnection.Close();
-
         }
 
         public static int MostrarMenu()
