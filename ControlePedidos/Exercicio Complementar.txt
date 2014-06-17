@@ -27,7 +27,7 @@ CREATE TABLE [dbo].[Funcionario]
 
 8) SELECT SUM(f.Salario) FROM Funcionario AS f GROUP BY f.Departamento_Id;
 
-9) 
+9) DELETE FROM Departamento WHERE id NOT IN (Select d.Id from Departamento As d INNER JOIN Funcionario As f ON f.Departamento_Id = d.Id);
 
 10) Select d.Nome AS NomeDepartamento FROM Departamento AS d INNER JOIN Funcionario AS f ON f.Departamento_Id = d.Id WHERE f.Funcao LIKE 'Supervisor%';
 
