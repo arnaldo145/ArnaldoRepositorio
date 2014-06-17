@@ -15,4 +15,34 @@ CREATE TABLE [dbo].[Funcionario]
 	FOREIGN KEY ([Departamento_Id]) REFERENCES [dbo].[Departamento] ([Id])
 )
 
-2) 
+3) Select f.PrimeiroNome, f.Sobrenome from funcionario as f ORDER BY f.Sobrenome;
+
+4) Select * from funcionario as f ORDER BY f.Funcao;
+
+5) SELECT * FROM Funcionario as f WHERE f.Salario > 1000 ORDER BY PrimeiroNome;
+
+6) SELECT SUM(f.Salario) as SomaFolhaPagamento FROM FUNCIONARIO AS f;
+
+7) SELECT f.PrimeiroNome AS Nome, d.Nome AS Departamento, f.Funcao AS funcao FROM Funcionario AS f INNER JOIN Departamento AS d ON d.Id = f.Departamento_Id ORDER BY f.PrimeiroNome;
+
+8) SELECT SUM(f.Salario) FROM Funcionario AS f GROUP BY f.Departamento_Id;
+
+9) 
+
+10) Select d.Nome AS NomeDepartamento FROM Departamento AS d INNER JOIN Funcionario AS f ON f.Departamento_Id = d.Id WHERE f.Funcao LIKE 'Supervisor%';
+
+11) Select * FROM Funcionario AS f WHERE F.Salario >= 500 AND F.Salario <= 1500 ORDER BY F.PrimeiroNome;
+
+12) Select f.PrimeiroNome FROM Funcionario AS f WHERE F.PrimeiroNome LIKE 'M%';
+
+13) Select COUNT(*) FROM Funcionario;
+
+14) Select COUNT(*) FROM Funcionario AS f GROUP BY F.Departamento_Id;
+
+15) Select AVG(f.Salario) FROM Funcionario AS f;
+
+16) Select MIN(f.Salario) FROM Funcionario AS f GROUP BY f.Departamento_Id;
+
+17) Select MAX(f.Salario) FROM Funcionario AS f GROUP BY f.Departamento_Id;
+
+18) SELECT D.Nome, F.PrimeiroNome from Departamento AS d INNER JOIN Funcionario AS f ON F.Departamento_Id = d.Id ORDER BY D.Nome, F.PrimeiroNome;
