@@ -31,6 +31,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Banco de Dados", "Banco de 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlePedidos", "ControlePedidos\ControlePedidos.csproj", "{24F28270-D874-4052-AB2A-E0BB4616C549}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TrabalhoBD", "TrabalhoBD", "{53C9FB86-4A35-4F74-A80D-EC8BE47FC4E1}"
+	ProjectSection(SolutionItems) = preProject
+		Respostas.txt = Respostas.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
