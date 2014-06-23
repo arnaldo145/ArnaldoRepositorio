@@ -1,0 +1,31 @@
+--1)
+INSERT tbCurso(Nome) VALUES ('Informática');
+INSERT tbAluno(Nome, DataNascimento, Email, Sexo) VALUES ('Pedro Cezar', '1993/05/05', 'pedro.cezar@hotmail.com', 'M');
+INSERT tbMatricula(Aluno_Id, Curso_Id) VALUES (5, 6);
+
+--2)
+SELECT mat.Id, a.Nome, c.Nome FROM tbMatricula as mat INNER JOIN tbAluno as a ON a.Id = mat.Aluno_Id INNER JOIN tbCurso as c ON C.Id = mat.Curso_Id ORDER BY C.Nome;
+
+--3)
+Select a.Email from tbAluno as a WHERE (SELECT DATEDIFF(YEAR, a.DataNascimento, GETDATE())) >= 18;
+
+--4)
+SELECT COUNT(*) FROM tbAluno;
+
+--5)
+SELECT COUNT(*) FROM tbMatricula AS mat group by mat.Curso_Id;
+
+--6)
+Select a.Nome from tbAluno as a WHERE (SELECT DATEDIFF(YEAR, a.DataNascimento, GETDATE())) >= 18;
+
+--7)
+Select a.Nome from tbAluno as a WHERE a.Sexo = 'F';
+
+--8)
+SELECT mat.Id, aluno.Nome, curso.Nome AS Matricula FROM tbMatricula as mat INNER JOIN tbCurso AS curso ON curso.Id = mat.Curso_Id INNER JOIN tbAluno AS aluno ON aluno.Id = mat.Aluno_Id WHERE mat.Curso_Id = 1 AND aluno.Sexo = 'F';
+
+--9)
+SELECT c.Nome FROM tbCurso AS c ORDER BY c.Nome;
+
+--10) Liste nome e email dos alunos matriculados em cada curso
+SELECT m.Id AS Matricula, a.Nome AS Aluno, a.Email AS Email, c.Nome AS Curso FROM tbMatricula AS m INNER JOIN tbAluno AS a ON a.Id = m.Aluno_Id INNER JOIN tbCurso AS c ON c.Id = m.Curso_Id ORDER BY c.Nome;
