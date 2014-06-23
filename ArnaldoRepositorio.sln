@@ -37,6 +37,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TrabalhoBD", "TrabalhoBD", 
 		..\..\..\Documents\Trabalho SQL.docx = ..\..\..\Documents\Trabalho SQL.docx
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArrayList", "ArrayList", "{8D9FA226-0D75-4793-9FB6-494F18FA9BA1}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Documents\Ficha 08 - ArrayLists.pdf = ..\..\..\Documents\Ficha 08 - ArrayLists.pdf
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio_ArrayList", "Exercicio_ArrayList\Exercicio_ArrayList.csproj", "{C032BF5C-8388-4499-9906-41BD108C397C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +94,10 @@ Global
 		{24F28270-D874-4052-AB2A-E0BB4616C549}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24F28270-D874-4052-AB2A-E0BB4616C549}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24F28270-D874-4052-AB2A-E0BB4616C549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C032BF5C-8388-4499-9906-41BD108C397C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C032BF5C-8388-4499-9906-41BD108C397C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C032BF5C-8388-4499-9906-41BD108C397C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C032BF5C-8388-4499-9906-41BD108C397C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,5 +114,6 @@ Global
 		{8386F1DB-7B32-4732-9B48-F2BB92C8022A} = {D0473B35-79E1-4B32-91CE-4212BC4A45E7}
 		{E2C05324-B7EA-49CE-A5E5-59EED086954D} = {D0473B35-79E1-4B32-91CE-4212BC4A45E7}
 		{24F28270-D874-4052-AB2A-E0BB4616C549} = {5222BC10-AE96-43C2-861C-73313133B994}
+		{C032BF5C-8388-4499-9906-41BD108C397C} = {8D9FA226-0D75-4793-9FB6-494F18FA9BA1}
 	EndGlobalSection
 EndGlobal
