@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Exercicios_ArrayList.cs" />
     <Compile Include="Exercicio_ArrayList2.cs" />
+    <Compile Include="Exercicio_ArrayList3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
