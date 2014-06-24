@@ -9,7 +9,7 @@ namespace Exercicio_ArrayList
 {
     class Exercicio_ArrayList3
     {
-        static void Main(string[] args)
+        static void Mainj(string[] args)
         {
             //Faça um algoritmo que leia dois vetores (A e B) de 50 posições de números inteiros. O algoritmo deve, então, subtrair o 
             //primeiro elemento de A do último de B, acumulando o valor, subtrair o segundo elemento de A do penúltimo de B, acumulando
@@ -35,7 +35,7 @@ namespace Exercicio_ArrayList
                 Console.WriteLine("{0} - {1} = {2}", listA[i], listB[pos], (int)listA[i] - (int)listB[pos]);
                 pos--;
             }
-            Console.WriteLine("Soma: {0}", soma);
+            Console.WriteLine("\n \nSoma: {0}", soma);
             Console.ReadKey();
         }
     }

@@ -12,7 +12,7 @@ namespace Exercicio_ArrayList
 
         public static ArrayList telefones = new ArrayList();
         public static ArrayList nomes = new ArrayList();
-        static void MainI(string[] args)
+        static void Main(string[] args)
         {
             int opc = 0;
             int pos = 0;

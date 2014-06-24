@@ -22,7 +22,7 @@ Select a.Nome from tbAluno as a WHERE (SELECT DATEDIFF(YEAR, a.DataNascimento, G
 Select a.Nome from tbAluno as a WHERE a.Sexo = 'F';
 
 --8)
-SELECT mat.Id, aluno.Nome, curso.Nome AS Matricula FROM tbMatricula as mat INNER JOIN tbCurso AS curso ON curso.Id = mat.Curso_Id INNER JOIN tbAluno AS aluno ON aluno.Id = mat.Aluno_Id WHERE mat.Curso_Id = 1 AND aluno.Sexo = 'F';
+SELECT mat.Id AS Matricula, aluno.Nome As Aluno, curso.Nome AS Curso FROM tbMatricula as mat INNER JOIN tbCurso AS curso ON curso.Id = mat.Curso_Id INNER JOIN tbAluno AS aluno ON aluno.Id = mat.Aluno_Id WHERE mat.Curso_Id = 1 AND aluno.Sexo = 'F';
 
 --9)
 SELECT c.Nome FROM tbCurso AS c ORDER BY c.Nome;
