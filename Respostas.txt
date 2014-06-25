@@ -39,6 +39,7 @@ O SQL Server é o SGBD (Sistema Gerenciador de Banco de Dados) desenvolvido pela 
 O SQL Server foi lançado no mercado em 1988 para o sistema operacional OS/2, depois da parceria que a Microsoft firmou com a Sybase.  Durante os anos 90 a Microsoft iniciou o desenvolvimento de uma versão para a plataforma NT. Em 1993, o SQL passou ser um produto somente da Microsoft.
 Em 1995 a Microsoft lançou a versão 6.0 do SQL Server. Esse lançamento foi uma das maiores rescritas da tecnologia SQL Server. A versão 6.0 aumentou a performance substancialmente provendo mecanismos internos de replicação e administração centralizada.
 Em 2000 a Microsoft lançou o SQL Server 2000. O SQL Server 2000 é o lançamento mais importante do SQL Server até o momento. Essa versão foi construída sobre o framework do SQL Server 7.0.
+
 3)	Liste as principais características de SQL:
 
 O SQL Server 2008 R2 impressionou por sua simplicidade, que ajuda as grandes empresas, pois diminui o tempo para a criação da database. Esta versão do programa permite ao desenvolvedor usar uma linguagem de programação gerenciada, como C# ou VB.NET, para endereçar as consultas, ao invés de usar declarações SQL. Outra vantagem são as consultas transparentes e orientadas ao conjunto, escritas em .NET.
@@ -54,8 +55,9 @@ HIERARCHY ID: É um modelo de programação flexível, que ajuda a organizar a hiera
 Dados FILESTREAM: Permite o armazenamento de grandes dados binários diretamente no sistema NTFS de arquivos.
 Compressão de Backup: o backup exige menos I/O (entrada/saída) de disco, o que diminui os custos para manter o backup online.
 Computações de Bloqueio: As Computações de Bloqueio permitem aos usuários aumentar a profundidade das hierarquias assim como a complexidade da computação.
+
 4)	Descreva a sintaxe do comando SQL: SELECT. Quais cláusulas são obrigatórias e quais são opcionais:
 O comando SELECT tem como cláusulas obrigatórias: SELECT que informa quais campos deve ser selecionados, pode ser * que retornará todos os campos, ou especificar os campos desejados. Próxima clausula obrigatória é FROM que vai informar ao SGBD em qual tabela no banco de dados a pesquisa deve ser realizada. Já as cláusulas opcionais pode ser WHERE, que irá adicionar filtros nos resultados encontrados pelo SGBD. ORDER BY é clausula que pode ser inserida apenas quando se deseja organizar os resultados.
-5)	Qual a importância da linguagem SQL no desenvolvimento de softwares atualmente? Justifique.
 
+5)	Qual a importância da linguagem SQL no desenvolvimento de softwares atualmente? Justifique.
 A linguagem SQL pode ser considerada importante porque é uma ferramenta indispensável quando se deseja implementar um software de qualidade. O SQL é uma linguagem fácil e ótima alternativa para armazenar dados de maneira segura. É um forte concorrente com outras linguagens de SGBD, como MySQL e PostgreSQL.
