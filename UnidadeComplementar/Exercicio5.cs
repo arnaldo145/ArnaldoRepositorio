@@ -12,16 +12,114 @@ namespace UnidadeComplementar
         //Crie um algoritmo com uma coleção com todos dos times da copa. Sabe-se que são 64 times que serão sorteados e divididos em 8 grupos,
         //do A ao H. Depois de sorteados e alocados o algoritmo deve imprimir na tela todos os grupos.
 
-        public static ArrayList TimesCopa = new ArrayList();
+        public static List<String> TimesCopa = new List<String>();
+        public static List<String> GrupoA = new List<string>();
+        public static List<String> GrupoB = new List<string>();
+        public static List<String> GrupoC = new List<string>();
+        public static List<String> GrupoD = new List<string>();
+        public static List<String> GrupoE = new List<string>();
+        public static List<String> GrupoF = new List<string>();
+        public static List<String> GrupoG = new List<string>();
+        public static List<String> GrupoH = new List<string>();
+
 
         static void Main(string[] args)
         {
-            adicionarTimes();
+            AdicionarTimes();
+            SortearTimes();
+
+            Console.WriteLine("Grupo A: \n");
+            for (int i = 0; i < GrupoA.Count; i++)
+                Console.WriteLine(GrupoA[i]);
+
+            Console.WriteLine("\nGrupo B: \n");
+            for (int i = 0; i < GrupoB.Count; i++)
+                Console.WriteLine(GrupoB[i]);
+
+            Console.WriteLine("\nGrupo C: \n");
+            for (int i = 0; i < GrupoC.Count; i++)
+                Console.WriteLine(GrupoC[i]);
+
+            Console.WriteLine("\nGrupo D: \n");
+            for (int i = 0; i < GrupoD.Count; i++)
+                Console.WriteLine(GrupoD[i]);
+
+            Console.WriteLine("\nGrupo E: \n");
+            for (int i = 0; i < GrupoE.Count; i++)
+                Console.WriteLine(GrupoE[i]);
+
+            Console.WriteLine("\nGrupo F: \n");
+            for (int i = 0; i < GrupoF.Count; i++)
+                Console.WriteLine(GrupoF[i]);
+
+            Console.WriteLine("\nGrupo G: \n");
+            for (int i = 0; i < GrupoG.Count; i++)
+                Console.WriteLine(GrupoG[i]);
 
             Console.ReadKey();
         }
 
-        static void adicionarTimes()
+        static void SortearTimes()
+        {
+            Random gerador = new Random();   
+
+            for (int i = 0; i < 4; i++)
+            {
+                int sorteio = gerador.Next(0, TimesCopa.Count);
+                GrupoA.Add(TimesCopa[sorteio]);
+                TimesCopa.RemoveAt(sorteio);
+            }
+
+            for (int i = 0; i < 4; i++)
+            {
+                int sorteio = gerador.Next(0, TimesCopa.Count);
+                GrupoB.Add(TimesCopa[sorteio]);
+                TimesCopa.RemoveAt(sorteio);
+            }
+
+            for (int i = 0; i < 4; i++)
+            {
+                int sorteio = gerador.Next(0, TimesCopa.Count);
+                GrupoC.Add(TimesCopa[sorteio]);
+                TimesCopa.RemoveAt(sorteio);
+            }
+
+            for (int i = 0; i < 4; i++)
+            {
+                int sorteio = gerador.Next(0, TimesCopa.Count);
+                GrupoD.Add(TimesCopa[sorteio]);
+                TimesCopa.RemoveAt(sorteio);
+            }
+
+            for (int i = 0; i < 4; i++)
+            {
+                int sorteio = gerador.Next(0, TimesCopa.Count);
+                GrupoE.Add(TimesCopa[sorteio]);
+                TimesCopa.RemoveAt(sorteio);
+            }
+
+            for (int i = 0; i < 4; i++)
+            {
+                int sorteio = gerador.Next(0, TimesCopa.Count);
+                GrupoF.Add(TimesCopa[sorteio]);
+                TimesCopa.RemoveAt(sorteio);
+            }
+
+            for (int i = 0; i < 4; i++)
+            {
+                int sorteio = gerador.Next(0, TimesCopa.Count);
+                GrupoG.Add(TimesCopa[sorteio]);
+                TimesCopa.RemoveAt(sorteio);
+            }
+
+            for (int i = 0; i < 4; i++)
+            {
+                int sorteio = gerador.Next(0, TimesCopa.Count);
+                GrupoH.Add(TimesCopa[sorteio]);
+                TimesCopa.RemoveAt(sorteio);
+            }
+        }
+        static void AdicionarTimes()
         {
             TimesCopa.Add("Brasil");
             TimesCopa.Add("Argentina");
@@ -57,7 +155,7 @@ namespace UnidadeComplementar
             TimesCopa.Add("Honduras");
         }
 
-        
+
 
     }
 }
