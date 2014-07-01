@@ -46,6 +46,19 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnidadeComplementar", "UnidadeComplementar\UnidadeComplementar.csproj", "{D151BFF9-6E01-4942-A450-815B5638F9B7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WEB", "WEB", "{EB79C23D-3271-4AF0-8DA1-98485E073FFB}"
+	ProjectSection(SolutionItems) = preProject
+		ExemploCSS.html = ExemploCSS.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSS", "CSS", "{E4602C1B-2641-4118-A5A9-A50649B2E243}"
+	ProjectSection(SolutionItems) = preProject
+		Exemplo.css = Exemplo.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{DF1B8E1C-8CC1-4433-BE3A-BB1F53A0D1F4}"
+	ProjectSection(SolutionItems) = preProject
+		Lighthouse.jpg = Lighthouse.jpg
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,5 +136,7 @@ Global
 		{E2C05324-B7EA-49CE-A5E5-59EED086954D} = {D0473B35-79E1-4B32-91CE-4212BC4A45E7}
 		{24F28270-D874-4052-AB2A-E0BB4616C549} = {5222BC10-AE96-43C2-861C-73313133B994}
 		{C032BF5C-8388-4499-9906-41BD108C397C} = {8D9FA226-0D75-4793-9FB6-494F18FA9BA1}
+		{E4602C1B-2641-4118-A5A9-A50649B2E243} = {EB79C23D-3271-4AF0-8DA1-98485E073FFB}
+		{DF1B8E1C-8CC1-4433-BE3A-BB1F53A0D1F4} = {E4602C1B-2641-4118-A5A9-A50649B2E243}
 	EndGlobalSection
 EndGlobal
